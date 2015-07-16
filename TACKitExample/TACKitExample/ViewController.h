@@ -2,7 +2,7 @@
 //  ViewController.h
 //  TACKitExample
 //
-//  Created by companion_ios on 20150716.
+//  Created by masato_arai on 2015/07/16.
 //  Copyright (c) 2015年 masato_arai. All rights reserved.
 //
 

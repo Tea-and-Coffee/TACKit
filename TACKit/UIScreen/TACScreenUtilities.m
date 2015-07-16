@@ -2,8 +2,8 @@
 //  TACScreenUtilities.m
 //  MobileMessenger
 //
-//  Created by companion_ios on 20150604.
-//  Copyright (c) 2015年 companion_ios. All rights reserved.
+//  Created by masato_arai on 2015/06/04.
+//  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
 #import "TACScreenUtilities.h"

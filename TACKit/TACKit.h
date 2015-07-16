@@ -38,7 +38,7 @@
 #import "TACTableViewCellStyleValue2.h"
 #import "TACTableViewCellStyleSubtitle.h"
 #import "UITableViewCell+Common.h"
-#import "PlaceHolderTextView.h"
+#import "UIPlaceHolderTextView.h"
 #import "TACView.h"
 #import "UIView+Common.h"
 #import "UIView+Debug.h"

@@ -1,18 +1,18 @@
 //
-//  PlaceHolderTextView.m
-//  MobileMessenger
+//  UIPlaceHolderTextView.m
+//  TACKitExample
 //
 //  Created by masato_arai on 2015/04/27.
 //  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
-#import "PlaceHolderTextView.h"
+#import "UIPlaceHolderTextView.h"
 
-@interface PlaceHolderTextView ()
+@interface UIPlaceHolderTextView ()
 
 @end
 
-@implementation PlaceHolderTextView
+@implementation UIPlaceHolderTextView
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];

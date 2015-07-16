@@ -1,5 +1,5 @@
 //
-//  PlaceHolderTextView.h
+//  UIPlaceHolderTextView.h
 //  TACKitExample
 //
 //  Created by masato_arai on 2015/04/27.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlaceHolderTextView : UITextView
+@interface UIPlaceHolderTextView : UITextView
 
 @property (nonatomic, strong, readonly) UILabel *placeHolderLabel;
 

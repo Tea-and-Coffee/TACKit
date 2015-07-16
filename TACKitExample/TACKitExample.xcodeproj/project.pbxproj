@@ -30,7 +30,6 @@
 		F43C3E1E1B577BC9008DCA99 /* TACTableViewCellStyleValue1.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DF61B577BC9008DCA99 /* TACTableViewCellStyleValue1.m */; };
 		F43C3E1F1B577BC9008DCA99 /* TACTableViewCellStyleValue2.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DF81B577BC9008DCA99 /* TACTableViewCellStyleValue2.m */; };
 		F43C3E201B577BC9008DCA99 /* UITableViewCell+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DFA1B577BC9008DCA99 /* UITableViewCell+Common.m */; };
-		F43C3E211B577BC9008DCA99 /* PlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DFD1B577BC9008DCA99 /* PlaceHolderTextView.m */; };
 		F43C3E221B577BC9008DCA99 /* TACView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3E001B577BC9008DCA99 /* TACView.m */; };
 		F43C3E231B577BC9008DCA99 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3E021B577BC9008DCA99 /* UIView+Common.m */; };
 		F43C3E241B577BC9008DCA99 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3E041B577BC9008DCA99 /* UIView+Debug.m */; };
@@ -43,6 +42,7 @@
 		F49EC1701B5779B300820ED2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49EC16F1B5779B300820ED2 /* Images.xcassets */; };
 		F49EC1731B5779B300820ED2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49EC1711B5779B300820ED2 /* LaunchScreen.xib */; };
 		F49EC17F1B5779B300820ED2 /* TACKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */; };
+		F49EC18B1B578EC800820ED2 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC18A1B578EC800820ED2 /* UIPlaceHolderTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,8 +110,6 @@
 		F43C3DF81B577BC9008DCA99 /* TACTableViewCellStyleValue2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACTableViewCellStyleValue2.m; sourceTree = "<group>"; };
 		F43C3DF91B577BC9008DCA99 /* UITableViewCell+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Common.h"; sourceTree = "<group>"; };
 		F43C3DFA1B577BC9008DCA99 /* UITableViewCell+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Common.m"; sourceTree = "<group>"; };
-		F43C3DFC1B577BC9008DCA99 /* PlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceHolderTextView.h; sourceTree = "<group>"; };
-		F43C3DFD1B577BC9008DCA99 /* PlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceHolderTextView.m; sourceTree = "<group>"; };
 		F43C3DFF1B577BC9008DCA99 /* TACView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACView.h; sourceTree = "<group>"; };
 		F43C3E001B577BC9008DCA99 /* TACView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACView.m; sourceTree = "<group>"; };
 		F43C3E011B577BC9008DCA99 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
@@ -136,6 +134,8 @@
 		F49EC17D1B5779B300820ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TACKitExampleTests.m; sourceTree = "<group>"; };
 		F49EC1881B577CEB00820ED2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F49EC1891B578EC800820ED2 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		F49EC18A1B578EC800820ED2 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,8 +336,8 @@
 		F43C3DFB1B577BC9008DCA99 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				F43C3DFC1B577BC9008DCA99 /* PlaceHolderTextView.h */,
-				F43C3DFD1B577BC9008DCA99 /* PlaceHolderTextView.m */,
+				F49EC1891B578EC800820ED2 /* UIPlaceHolderTextView.h */,
+				F49EC18A1B578EC800820ED2 /* UIPlaceHolderTextView.m */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -546,7 +546,7 @@
 				F43C3E161B577BC9008DCA99 /* UIImage+CommonImage.m in Sources */,
 				F43C3E1A1B577BC9008DCA99 /* TACScreenUtilities.m in Sources */,
 				F43C3E131B577BC9008DCA99 /* TACDebugMode.m in Sources */,
-				F43C3E211B577BC9008DCA99 /* PlaceHolderTextView.m in Sources */,
+				F49EC18B1B578EC800820ED2 /* UIPlaceHolderTextView.m in Sources */,
 				F49EC1681B5779B300820ED2 /* AppDelegate.m in Sources */,
 				F43C3E1D1B577BC9008DCA99 /* TACTableViewCellStyleSubtitle.m in Sources */,
 				F43C3E1B1B577BC9008DCA99 /* TACTableView.m in Sources */,

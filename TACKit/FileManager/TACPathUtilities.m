@@ -7,6 +7,7 @@
 //
 
 #import "TACPathUtilities.h"
+#import "TACDebugLog.h"
 
 static NSString * const _identifier = @"jp.co.teaandcoffee.TACKit.TACFileManager";
 

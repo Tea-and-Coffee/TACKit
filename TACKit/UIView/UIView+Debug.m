@@ -7,6 +7,7 @@
 //
 
 #import "UIView+Debug.h"
+#import "TACDebugMode.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wincomplete-implementation"

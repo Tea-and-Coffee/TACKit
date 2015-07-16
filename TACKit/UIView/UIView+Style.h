@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, TACViewStyle) {
+    TACViewStyleDefault,
+    TACViewStyleCircle
+};
+
 @interface UIView (Style)
 
 - (void)setStyle:(TACViewStyle)style;

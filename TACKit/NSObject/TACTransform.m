@@ -7,6 +7,7 @@
 //
 
 #import "TACTransform.h"
+#import "TACDebugLog.h"
 
 @implementation TACTransform
 

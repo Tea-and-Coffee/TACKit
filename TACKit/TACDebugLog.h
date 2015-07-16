@@ -7,7 +7,8 @@
 //
 
 // ----------------
-// Usage http://d.hatena.ne.jp/k2_k_hei/20120511/1336750473
+// Thank you so much.
+// http://d.hatena.ne.jp/k2_k_hei/20120511/1336750473
 #ifdef DEBUG
 #define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #define RLog(...)
@@ -20,7 +21,8 @@
 #define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 
 // ----------------
-// Usage http://qiita.com/yusuga_/items/3751cf2a0b0dbf2eefd8
+// Thank you so much.
+// http://qiita.com/yusuga_/items/3751cf2a0b0dbf2eefd8
 #ifdef DEBUG
 #define DLog_PRINTF(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #define DLog_METHOD NSLog(@"%s", __func__)

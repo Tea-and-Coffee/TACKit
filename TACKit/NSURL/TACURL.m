@@ -7,6 +7,7 @@
 //
 
 #import "TACURL.h"
+#import "TACDebugLog.h"
 
 @implementation TACURL
 

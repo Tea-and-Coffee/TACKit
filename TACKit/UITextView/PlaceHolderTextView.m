@@ -10,7 +10,7 @@
 
 @interface PlaceHolderTextView ()
 
-@property (nonatomic, retain) UILabel *placeHolderLabel;
+@property (nonatomic, strong) UILabel *placeHolderLabel;
 
 @end
 
@@ -18,13 +18,6 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-#if __has_feature(objc_arc)
-#else
-    [_placeHolderLabel release]; _placeHolderLabel = nil;
-    [_placeholderColor release]; _placeholderColor = nil;
-    [_placeholder release]; _placeholder = nil;
-    [super dealloc];
-#endif
 }
 
 - (void)awakeFromNib {

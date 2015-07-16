@@ -7,6 +7,7 @@
 //
 
 #import "UIAlertView+Error.h"
+#import "TACDebugLog.h"
 
 @implementation UIAlertView (Error)
 

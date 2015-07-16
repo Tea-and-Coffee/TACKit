@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 companion_ios. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #import "TACColor.h"
 #import "TACENUMs.h"

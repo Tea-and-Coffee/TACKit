@@ -7,6 +7,7 @@
 //
 
 #import "UIAlertView+HTTPStatus.h"
+#import "TACDebugLog.h"
 
 @implementation UIAlertView (HTTPStatus)
 

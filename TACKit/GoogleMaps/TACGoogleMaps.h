@@ -6,8 +6,9 @@
 //  Copyright (c) 2015年 companion_ios. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface TACGoogleMaps : NSObject
 

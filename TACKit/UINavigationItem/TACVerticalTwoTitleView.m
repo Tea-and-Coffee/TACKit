@@ -7,6 +7,7 @@
 //
 
 #import "TACVerticalTwoTitleView.h"
+#import "TACColor.h"
 
 @implementation TACVerticalTwoTitleView {
     UINavigationBar *_navigationBar;

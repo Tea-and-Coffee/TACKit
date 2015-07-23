@@ -3,7 +3,7 @@
 //  TACKitExample
 //
 //  Created by masato_arai on 2015/07/16.
-//  Copyright (c) 2015年 masato_arai. All rights reserved.
+//  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
 #import "AppDelegate.h"

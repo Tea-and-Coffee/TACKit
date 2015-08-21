@@ -73,14 +73,12 @@ NSString *searchPathDirectory(TACSearchPathDirectory directory) {
             return @"JSON";
         }
         case TACMoviesDirectory: {
-            return @"JSON";
+            return @"Movies";
         }
         case TACMusicDirectory: {
-            return @"JSON";
+            return @"Music";
         }
     }
 }
-
-
 
 @end

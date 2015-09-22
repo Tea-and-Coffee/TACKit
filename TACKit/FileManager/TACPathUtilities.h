@@ -24,19 +24,27 @@ typedef NS_ENUM(NSUInteger, TACSearchPathDirectory) {
 FOUNDATION_EXPORT NSString *TACSearchPathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
 FOUNDATION_EXPORT NSString *TACCreatePathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
 FOUNDATION_EXPORT NSString *TACCreatePathForTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+FOUNDATION_EXPORT BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+FOUNDATION_EXPORT BOOL TACRemoveTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
 
 void createDirectoryAtPath(NSString *path);
 
 @end
 
-/*
- [Usage]
- TACSearchPathForDirectoryInDomains
- NSString *path = TACSearchPathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
- 
- TACCreatePathForDirectoryInDomains
- NSString *path = TACCreatePathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
- 
- TACCreatePathForTACDirectoryInDomains
- NSString *path = TACCreatePathForTACDirectoryInDomains(TACImagesDirectory, NSUserDomainMask, YES);
+/**
+ * [Usage]
+ * TACSearchPathForDirectoryInDomains
+ * NSString *path = TACSearchPathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+ *
+ * TACCreatePathForDirectoryInDomains
+ * NSString *path = TACCreatePathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+ *
+ * TACCreatePathForTACDirectoryInDomains
+ * NSString *path = TACCreatePathForTACDirectoryInDomains(TACImagesDirectory, NSUserDomainMask, YES);
+ *
+ * TACRemoveDirectoryInDomains
+ * BOOL result = TACRemoveDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+ *
+ * TACRemoveTACDirectoryInDomains
+ * BOOL result = TACRemoveTACDirectoryInDomains(TACImagesDirectory, NSUserDomainMask, YES);
  */

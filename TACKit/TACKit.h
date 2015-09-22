@@ -24,7 +24,7 @@
 #import "TACInstantiate.h"
 #import "TACTransform.h"
 #import "TACURL.h"
-#import "TACFileManager.h"
+#import "TACPathUtilities.h"
 #import "UIAlertView+Error.h"
 #import "UIAlertView+HTTPStatus.h"
 #import "UIImage+Trimming.h"

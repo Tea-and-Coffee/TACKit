@@ -35,12 +35,42 @@ NSString *TACCreatePathForTACDirectoryInDomains(TACSearchPathDirectory directory
 void createDirectoryAtPath(NSString *path) {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
-    if (![fileManager fileExistsAtPath:path]) {
-        BOOL result = [fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
-        if (!result) {
-            ALog(@"error %@", error);
-        }
+    if ([fileManager fileExistsAtPath:path]) {
+        return;
     }
+    
+    BOOL result = [fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
+    if (!result) {
+        ALog(@"error %@", error);
+    }
+}
+
+BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde) {
+    NSString *path = TACSearchPathForDirectoryInDomains(directory, domainMask, expandTilde);
+    BOOL result = removeItemAtPath(path);
+    return result;
+}
+
+BOOL TACRemoveTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde) {
+    NSString *path = TACSearchPathForDirectoryInDomains(NSCachesDirectory, domainMask, expandTilde);
+    path = [path stringByAppendingPathComponent:_identifier];
+    path = [path stringByAppendingPathComponent:searchPathDirectory(directory)];
+    BOOL result = removeItemAtPath(path);
+    return result;
+}
+
+BOOL removeItemAtPath(NSString *path) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    if (![fileManager fileExistsAtPath:path]) {
+        return NO;
+    }
+    
+    BOOL result = [fileManager removeItemAtPath:path error:&error];
+    if (!result) {
+        ALog(@"error %@", error);
+    }
+    return result;
 }
 
 BOOL addSkipBackupAttributeToItemAtURL(NSURL *URL) {

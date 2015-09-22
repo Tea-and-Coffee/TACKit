@@ -6,10 +6,11 @@
 //  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
-static NSInteger const MARGIN_SIZE = 8;
-static NSInteger const NAVIGATIONBAR_PORTRAIT_HEIGHT = 44;
-static NSInteger const NAVIGATIONBAR_LANDSCAPE_HEIGHT = 32;
-static NSInteger const TOOLBAR_HEIGHT = 44;
-static NSInteger const TABBAR_HEIGHT = 49;
+static CGFloat const MARGIN_SIZE = 8.0;
+static CGFloat const STATUSBAR_HEIGHT = 20.0;
+static CGFloat const NAVIGATIONBAR_PORTRAIT_HEIGHT = 44.0;
+static CGFloat const NAVIGATIONBAR_LANDSCAPE_HEIGHT = 32.0;
+static CGFloat const TOOLBAR_HEIGHT = 44.0;
+static CGFloat const TABBAR_HEIGHT = 49.0;
 
-static NSInteger const TABLEVIEWCELL_MAX_HEIGHT = 2009;
+static CGFloat const TABLEVIEWCELL_MAX_HEIGHT = 2009.0;

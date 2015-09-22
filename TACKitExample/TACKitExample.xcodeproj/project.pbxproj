@@ -56,7 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F43C3DB91B577BC9008DCA99 /* TACFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACFileManager.h; sourceTree = "<group>"; };
 		F43C3DBA1B577BC9008DCA99 /* TACPathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACPathUtilities.h; sourceTree = "<group>"; };
 		F43C3DBB1B577BC9008DCA99 /* TACPathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACPathUtilities.m; sourceTree = "<group>"; };
 		F43C3DBD1B577BC9008DCA99 /* TACGoogleMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACGoogleMaps.h; sourceTree = "<group>"; };
@@ -200,7 +199,6 @@
 		F43C3DB81B577BC9008DCA99 /* FileManager */ = {
 			isa = PBXGroup;
 			children = (
-				F43C3DB91B577BC9008DCA99 /* TACFileManager.h */,
 				F43C3DBA1B577BC9008DCA99 /* TACPathUtilities.h */,
 				F43C3DBB1B577BC9008DCA99 /* TACPathUtilities.m */,
 			);

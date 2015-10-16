@@ -60,4 +60,7 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)dealloc {
+}
+
 @end

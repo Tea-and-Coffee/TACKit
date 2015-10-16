@@ -7,6 +7,7 @@
 //
 
 #import "NSData+Debug.h"
+#import "TACDebugLog.h"
 
 @implementation NSData (Debug)
 

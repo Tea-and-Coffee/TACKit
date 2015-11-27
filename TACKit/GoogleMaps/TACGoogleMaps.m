@@ -12,11 +12,11 @@
 
 /* CLLocationからGoogle Maps.appが開けるかを確認する */
 - (BOOL)canOpen {
-    NSString *escapedPlaceName = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
-                                                                                                       (CFStringRef)self.placeName,
-                                                                                                       NULL,
-                                                                                                       CFSTR(":/?=,!$&'()*+;[]@#"),
-                                                                                                       CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+    NSString *escapedPlaceName = CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,
+                                                                                           (CFStringRef)self.placeName,
+                                                                                           NULL,
+                                                                                           CFSTR("!*'();:@&=+$,/?%#[]"),
+                                                                                           CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding)));
     
     NSString *urlStr = [NSString stringWithFormat:@"comgooglemaps://?q=%f,%f(%@)", self.location.coordinate.latitude, self.location.coordinate.longitude, escapedPlaceName];
     self.url = [NSURL URLWithString:urlStr];

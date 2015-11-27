@@ -55,10 +55,7 @@
 }
 
 - (NSString *)decode:(NSString *)value {
-    return (NSString *)CFBridgingRelease(CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
-                                                                                                 (CFStringRef) value,
-                                                                                                 CFSTR(""),
-                                                                                                 kCFStringEncodingUTF8));
+    return CFBridgingRelease(CFURLCreateStringByReplacingPercentEscapes(NULL, (CFStringRef)value, CFSTR("")));
 }
 
 @end

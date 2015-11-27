@@ -9,7 +9,10 @@
 #import "UIAlertView+HTTPStatus.h"
 #import "TACDebugLog.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @implementation UIAlertView (HTTPStatus)
+#pragma clang diagnostic pop
 
 - (instancetype)initWithHttpStatusCode:(NSInteger)statusCode delegate:(id)aDelegate {
     ALog(@"statusCode: %zd", statusCode);

@@ -13,7 +13,7 @@
 
 + (CGRect)bounds;
 + (CGSize)boundsSize;
-+ (CGRect)applicationFrame;
-+ (CGSize)applicationFrameSize;
++ (CGRect)applicationFrame NS_DEPRECATED_IOS(2_0, 9_0, "Use -[TACScreenUtilities bounds]") __TVOS_PROHIBITED;
++ (CGSize)applicationFrameSize NS_DEPRECATED_IOS(2_0, 9_0, "Use -[TACScreenUtilities bounds]") __TVOS_PROHIBITED;
 
 @end

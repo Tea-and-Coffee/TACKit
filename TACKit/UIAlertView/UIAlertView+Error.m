@@ -9,7 +9,10 @@
 #import "UIAlertView+Error.h"
 #import "TACDebugLog.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @implementation UIAlertView (Error)
+#pragma clang diagnostic pop
 
 - (instancetype)initWithError:(NSError *)error delegate:(id)aDelegate {
     ALog(@"NSError: %@", error);

@@ -19,11 +19,11 @@
     NSString *title;
     NSString *message;
     
-    if ([[error localizedFailureReason] length]) {
-        title = [error localizedDescription];
-        message = [error localizedFailureReason];
+    if (error.localizedFailureReason.length) {
+        title = error.localizedDescription;
+        message = error.localizedFailureReason;
     } else {
-        title = [error localizedDescription];
+        title = error.localizedDescription;
     }
     
     id alert = [self initWithTitle:title
@@ -35,8 +35,8 @@
 }
 
 - (instancetype)initWithException:(NSException *)exception delegate:(id)aDelegate {
-    id alert = [self initWithTitle:[exception name]
-                           message:[exception reason]
+    id alert = [self initWithTitle:exception.name
+                           message:exception.reason
                           delegate:aDelegate
                  cancelButtonTitle:nil
                  otherButtonTitles:@"Dissmiss", nil];

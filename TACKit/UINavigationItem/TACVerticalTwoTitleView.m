@@ -47,7 +47,7 @@
  * Override UIView method
  */
 - (CGRect)frame {
-    CGRect frame = [super frame];
+    CGRect frame = super.frame;
     frame.size = [self sizeThatFits:frame.size withLayout:NO];
     return frame;
 }

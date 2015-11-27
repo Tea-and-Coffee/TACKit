@@ -19,7 +19,7 @@
             imageName = @"LaunchImage-700";
         }
     } else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        UIDeviceOrientation orientation = (UIDeviceOrientation)[[UIApplication sharedApplication] statusBarOrientation];
+        UIDeviceOrientation orientation = (UIDeviceOrientation)[UIApplication sharedApplication].statusBarOrientation;
         if (UIDeviceOrientationIsPortrait(orientation)) {
             imageName = @"LaunchImage-700-Portrait";
         } else {

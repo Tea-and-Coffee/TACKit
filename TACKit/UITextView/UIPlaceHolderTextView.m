@@ -34,7 +34,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
 }
 
-- (id)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
         _placeholder = @"";
         _placeholderColor = [UIColor lightGrayColor];
@@ -44,24 +44,24 @@
 }
 
 - (void)textChanged:(NSNotification *)notification {
-    if ([_placeholder length] == 0) {
+    if (_placeholder.length == 0) {
         return;
     }
     
-    if ([[self text] length] == 0) {
-        [[self viewWithTag:999] setAlpha:1];
+    if (self.text.length == 0) {
+        [self viewWithTag:999].alpha = 1;
     } else {
-        [[self viewWithTag:999] setAlpha:0];
+        [self viewWithTag:999].alpha = 0;
     }
 }
 
 - (void)setText:(NSString *)text {
-    [super setText:text];
+    super.text = text;
     [self textChanged:nil];
 }
 
 - (void)drawRect:(CGRect)rect {
-    if ([_placeholder length] > 0) {
+    if (_placeholder.length > 0) {
         if (_placeHolderLabel == nil) {
             _placeHolderLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,8,self.bounds.size.width - 16,0)];
             _placeHolderLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -79,8 +79,8 @@
         [self sendSubviewToBack:_placeHolderLabel];
     }
     
-    if ([[self text] length] == 0 && [_placeholder length] > 0) {
-        [[self viewWithTag:999] setAlpha:1];
+    if (self.text.length == 0 && _placeholder.length > 0) {
+        [self viewWithTag:999].alpha = 1;
     }
     
     [super drawRect:rect];

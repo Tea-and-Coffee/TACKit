@@ -24,7 +24,7 @@ static NSString * const httpScheme = @"https";
     if (!target) {
         return target;
     }
-    if ([target length] == 0) {
+    if (target.length == 0) {
         return target;
     }
     
@@ -52,8 +52,8 @@ static NSString * const httpScheme = @"https";
 /// NSDateFormatterStyleを変更したNSDateを返す
 + (NSDate *)dateFromDate:(NSDate *)date dateStyle:(NSDateFormatterStyle)dstyle timeStyle:(NSDateFormatterStyle)tstyle {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateStyle:dstyle];
-    [formatter setTimeStyle:tstyle];
+    formatter.dateStyle = dstyle;
+    formatter.timeStyle = tstyle;
     NSString *str = [formatter stringFromDate:date];
     NSDate *styledData = [formatter dateFromString:str];
     
@@ -66,7 +66,7 @@ static NSString * const httpScheme = @"https";
 + (void)changeAllValuesByString:(NSMutableDictionary *)targetDictionary {
     for (NSString *key in targetDictionary.allKeys) {
         
-        NSString *objectClassName = NSStringFromClass([[targetDictionary objectForKey:key] class]);
+        NSString *objectClassName = NSStringFromClass([targetDictionary[key] class]);
         
         NSString *__NSCFString = @"__NSCFString";
         NSString *__NSCFConstantString = @"__NSCFConstantString";
@@ -78,18 +78,18 @@ static NSString * const httpScheme = @"https";
         if([objectClassName compare:__NSCFString] == NSOrderedSame) {
         } else if ([objectClassName compare:__NSCFConstantString] == NSOrderedSame) {
         } else if([objectClassName compare:__NSCFNumber] == NSOrderedSame) {
-            NSString *stringValue = [[targetDictionary objectForKey:key] stringValue];
-            [targetDictionary setObject:stringValue forKey:key];
+            NSString *stringValue = [targetDictionary[key] stringValue];
+            targetDictionary[key] = stringValue;
         } else if([objectClassName compare:NSDecimalNumber] == NSOrderedSame) {
-            NSString *stringValue = [[targetDictionary objectForKey:key] stringValue];
-            [targetDictionary setObject:stringValue forKey:key];
+            NSString *stringValue = [targetDictionary[key] stringValue];
+            targetDictionary[key] = stringValue;
         } else if ([objectClassName compare:__NSArrayM] == NSOrderedSame) {
-            NSArray *array = [targetDictionary objectForKey:key];
+            NSArray *array = targetDictionary[key];
             for (NSMutableDictionary *newTarget in array) {
                 [self changeAllValuesByString:newTarget];
             }
         } else if ([objectClassName compare:__NSDictionaryM] == NSOrderedSame) {
-            NSMutableDictionary *newTarget = [targetDictionary objectForKey:key];
+            NSMutableDictionary *newTarget = targetDictionary[key];
             [self changeAllValuesByString:newTarget];
         } else {
             DLog(@"key: %@", key);

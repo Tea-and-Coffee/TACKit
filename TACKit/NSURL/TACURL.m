@@ -49,7 +49,7 @@
         val = [val stringByReplacingOccurrencesOfString:@"+" withString:@" "];
         key = [self decode:key];
         val = [self decode:val];
-        [dict setObject:val forKey:key];
+        dict[key] = val;
     }
     return [dict copy];
 }

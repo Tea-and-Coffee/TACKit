@@ -47,7 +47,7 @@ BOOL createDirectoryAtPath(NSString *path) {
 }
 
 BOOL createDirectoryAtURL(NSURL *URL) {
-    return createDirectoryAtPath([URL path]);
+    return createDirectoryAtPath(URL.path);
 }
 
 BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde) {
@@ -79,7 +79,7 @@ BOOL removeItemAtPath(NSString *path) {
 }
 
 BOOL removeItemAtURL(NSURL *URL) {
-    return removeItemAtPath([URL path]);
+    return removeItemAtPath(URL.path);
 }
 
 BOOL addSkipBackupAttributeWithItemPath(NSString *path) {
@@ -91,7 +91,7 @@ BOOL addSkipBackupAttributeWithItemURL(NSURL *URL) {
     NSError *error;
     assert([fileManager fileExistsAtPath:[URL path]]);
     
-    BOOL result = [URL setResourceValue:[NSNumber numberWithBool:YES] forKey:NSURLIsExcludedFromBackupKey error:&error];
+    BOOL result = [URL setResourceValue:@YES forKey:NSURLIsExcludedFromBackupKey error:&error];
     if (!result) {
         ALog(@"Error excluding %@ from backup %@", [URL lastPathComponent], error);
     }

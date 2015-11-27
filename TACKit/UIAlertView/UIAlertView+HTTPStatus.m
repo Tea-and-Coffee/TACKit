@@ -17,7 +17,7 @@
 - (instancetype)initWithHttpStatusCode:(NSInteger)statusCode delegate:(id)aDelegate {
     ALog(@"statusCode: %zd", statusCode);
     NSString *title = @"Http Status Code Error";
-    NSString *message = [@(statusCode) stringValue];
+    NSString *message = (@(statusCode)).stringValue;
     
     switch (statusCode) {
         case OK:

@@ -32,17 +32,18 @@ NSString *TACCreatePathForTACDirectoryInDomains(TACSearchPathDirectory directory
     return path;
 }
 
-void createDirectoryAtPath(NSString *path) {
+BOOL createDirectoryAtPath(NSString *path) {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
     if ([fileManager fileExistsAtPath:path]) {
-        return;
+        return YES;
     }
     
     BOOL result = [fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
     if (!result) {
         ALog(@"error %@", error);
     }
+    return result;
 }
 
 BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde) {
@@ -63,7 +64,7 @@ BOOL removeItemAtPath(NSString *path) {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
     if (![fileManager fileExistsAtPath:path]) {
-        return NO;
+        return YES;
     }
     
     BOOL result = [fileManager removeItemAtPath:path error:&error];
@@ -73,7 +74,7 @@ BOOL removeItemAtPath(NSString *path) {
     return result;
 }
 
-BOOL addSkipBackupAttributeToItemAtURL(NSURL *URL) {
+BOOL addSkipBackupAttributeWithItemURL(NSURL *URL) {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
     assert([fileManager fileExistsAtPath:[URL path]]);

@@ -29,6 +29,10 @@ FOUNDATION_EXPORT BOOL TACRemoveTACDirectoryInDomains(TACSearchPathDirectory dir
 
 BOOL createDirectoryAtPath(NSString *path);
 BOOL removeItemAtPath(NSString *path);
+BOOL addSkipBackupAttributeWithItemPath(NSString *path);
+
+BOOL createDirectoryAtURL(NSURL *URL);
+BOOL removeItemAtURL(NSURL *URL);
 BOOL addSkipBackupAttributeWithItemURL(NSURL *URL);
 
 @end

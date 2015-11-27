@@ -46,6 +46,10 @@ BOOL createDirectoryAtPath(NSString *path) {
     return result;
 }
 
+BOOL createDirectoryAtURL(NSURL *URL) {
+    return createDirectoryAtPath([URL path]);
+}
+
 BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde) {
     NSString *path = TACSearchPathForDirectoryInDomains(directory, domainMask, expandTilde);
     BOOL result = removeItemAtPath(path);
@@ -72,6 +76,14 @@ BOOL removeItemAtPath(NSString *path) {
         ALog(@"error %@", error);
     }
     return result;
+}
+
+BOOL removeItemAtURL(NSURL *URL) {
+    return removeItemAtPath([URL path]);
+}
+
+BOOL addSkipBackupAttributeWithItemPath(NSString *path) {
+    return addSkipBackupAttributeWithItemURL([NSURL URLWithString:path]);
 }
 
 BOOL addSkipBackupAttributeWithItemURL(NSURL *URL) {

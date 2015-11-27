@@ -38,7 +38,8 @@ BOOL addSkipBackupAttributeWithItemURL(NSURL *URL);
 @end
 
 /**
- * [Usage]
+ * [How To Use]
+ *
  * TACSearchPathForDirectoryInDomains
  * NSString *path = TACSearchPathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
  *

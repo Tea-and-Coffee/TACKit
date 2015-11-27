@@ -10,6 +10,7 @@
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeuUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeuUtilities.m */; };
+		DC5EA4701C0888EE0098BE60 /* TACRuntimeuUtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA46F1C0888EE0098BE60 /* TACRuntimeuUtilitiesTests.m */; };
 		F43C3E0A1B577BC9008DCA99 /* TACPathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DBB1B577BC9008DCA99 /* TACPathUtilities.m */; };
 		F43C3E0B1B577BC9008DCA99 /* TACGoogleMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DBE1B577BC9008DCA99 /* TACGoogleMaps.m */; };
 		F43C3E0C1B577BC9008DCA99 /* TACAppleMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DC11B577BC9008DCA99 /* TACAppleMaps.m */; };
@@ -64,6 +65,7 @@
 		DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+ViewController.m"; sourceTree = "<group>"; };
 		DC5EA45A1C0864750098BE60 /* TACRuntimeuUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACRuntimeuUtilities.h; sourceTree = "<group>"; };
 		DC5EA45B1C0864750098BE60 /* TACRuntimeuUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACRuntimeuUtilities.m; sourceTree = "<group>"; };
+		DC5EA46F1C0888EE0098BE60 /* TACRuntimeuUtilitiesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACRuntimeuUtilitiesTests.m; sourceTree = "<group>"; };
 		F43C3DBA1B577BC9008DCA99 /* TACPathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACPathUtilities.h; sourceTree = "<group>"; };
 		F43C3DBB1B577BC9008DCA99 /* TACPathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACPathUtilities.m; sourceTree = "<group>"; };
 		F43C3DBD1B577BC9008DCA99 /* TACGoogleMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACGoogleMaps.h; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 			children = (
 				DC5EA45A1C0864750098BE60 /* TACRuntimeuUtilities.h */,
 				DC5EA45B1C0864750098BE60 /* TACRuntimeuUtilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DC5EA46E1C0888EE0098BE60 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DC5EA46F1C0888EE0098BE60 /* TACRuntimeuUtilitiesTests.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -438,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */,
+				DC5EA46E1C0888EE0098BE60 /* Utilities */,
 				F49EC17C1B5779B300820ED2 /* Supporting Files */,
 			);
 			path = TACKitExampleTests;
@@ -592,6 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5EA4701C0888EE0098BE60 /* TACRuntimeuUtilitiesTests.m in Sources */,
 				F49EC17F1B5779B300820ED2 /* TACKitExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

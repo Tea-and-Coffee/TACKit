@@ -10,4 +10,12 @@
 
 @interface TACRuntimeuUtilities : NSObject
 
++ (void)swizzleImplementations:(Class)class1 selector:(SEL)target1 class:(Class)class2 selector:(SEL)target2;
+
 @end
+
+/**
+ * [How To Use]
+ *
+ * TACRuntimeuUtilitiesTestsに記述した。
+ */

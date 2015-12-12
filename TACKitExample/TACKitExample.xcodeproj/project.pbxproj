@@ -46,6 +46,8 @@
 		F49EC1731B5779B300820ED2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49EC1711B5779B300820ED2 /* LaunchScreen.xib */; };
 		F49EC17F1B5779B300820ED2 /* TACKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */; };
 		F49EC18B1B578EC800820ED2 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC18A1B578EC800820ED2 /* UIPlaceHolderTextView.m */; };
+		FB44B7541C1C809D0012E561 /* TACDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FB44B7531C1C809D0012E561 /* TACDevice.m */; settings = {ASSET_TAGS = (); }; };
+		FB44B7561C1C80BB0012E561 /* TACSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FB44B7551C1C80BB0012E561 /* TACSize.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,9 @@
 		F49EC1881B577CEB00820ED2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F49EC1891B578EC800820ED2 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		F49EC18A1B578EC800820ED2 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		FB44B7521C1C809D0012E561 /* TACDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACDevice.h; sourceTree = "<group>"; };
+		FB44B7531C1C809D0012E561 /* TACDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACDevice.m; sourceTree = "<group>"; };
+		FB44B7551C1C80BB0012E561 /* TACSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TACSize.m; path = ../../../Projects/bit/cocktail/Libraries/TACKit/TACSize.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +213,7 @@
 				F43C3DD51B577BC9008DCA99 /* TACENUMs.h */,
 				F43C3DD61B577BC9008DCA99 /* TACIdentifier.h */,
 				F43C3DD81B577BC9008DCA99 /* TACSize.h */,
+				FB44B7551C1C80BB0012E561 /* TACSize.m */,
 				F43C3DD91B577BC9008DCA99 /* TACSystemVersion.h */,
 				F43C3DB81B577BC9008DCA99 /* FileManager */,
 				F43C3DBC1B577BC9008DCA99 /* GoogleMaps */,
@@ -216,6 +222,7 @@
 				F43C3DC51B577BC9008DCA99 /* NSObject */,
 				F43C3DCE1B577BC9008DCA99 /* NSURL */,
 				F43C3DDA1B577BC9008DCA99 /* UIAlertView */,
+				FB44B7511C1C809D0012E561 /* UIDevice */,
 				F43C3DDF1B577BC9008DCA99 /* UIImage */,
 				F43C3DE41B577BC9008DCA99 /* UINavigationController */,
 				F43C3DE71B577BC9008DCA99 /* UINavigationItem */,
@@ -462,6 +469,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FB44B7511C1C809D0012E561 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				FB44B7521C1C809D0012E561 /* TACDevice.h */,
+				FB44B7531C1C809D0012E561 /* TACDevice.m */,
+			);
+			name = UIDevice;
+			path = ../../../Projects/bit/cocktail/Libraries/TACKit/UIDevice;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -578,6 +595,7 @@
 				F43C3E191B577BC9008DCA99 /* TACVerticalTwoTitleView.m in Sources */,
 				F43C3E1C1B577BC9008DCA99 /* TACTableViewCell.m in Sources */,
 				F49EC16B1B5779B300820ED2 /* ViewController.m in Sources */,
+				FB44B7541C1C809D0012E561 /* TACDevice.m in Sources */,
 				DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */,
 				F43C3E161B577BC9008DCA99 /* UIImage+CommonImage.m in Sources */,
 				F43C3E1A1B577BC9008DCA99 /* TACScreenUtilities.m in Sources */,
@@ -592,6 +610,7 @@
 				F43C3E0A1B577BC9008DCA99 /* TACPathUtilities.m in Sources */,
 				F43C3E181B577BC9008DCA99 /* TACNavigationController.m in Sources */,
 				F49EC1651B5779B300820ED2 /* main.m in Sources */,
+				FB44B7561C1C80BB0012E561 /* TACSize.m in Sources */,
 				F43C3E0D1B577BC9008DCA99 /* NSData+Debug.m in Sources */,
 				F43C3E0B1B577BC9008DCA99 /* TACGoogleMaps.m in Sources */,
 				F43C3E241B577BC9008DCA99 /* UIView+Debug.m in Sources */,

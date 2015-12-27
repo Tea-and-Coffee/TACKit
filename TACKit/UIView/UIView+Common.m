@@ -21,13 +21,13 @@
     return [nib instantiateWithOwner:self options:nil][0];
 }
 
-- (void)awaker {
-    // Initialization code
-}
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self awaker];
+}
+
+- (void)awaker {
+    // Initialization code
 }
 
 @end

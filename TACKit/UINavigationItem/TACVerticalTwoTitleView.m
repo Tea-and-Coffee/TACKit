@@ -13,6 +13,13 @@
     UINavigationBar *_navigationBar;
 }
 
+- (instancetype)initWithNavigationBar:(UINavigationBar *)navigationBar {
+    _navigationBar = navigationBar;
+    self = [super initWithFrame:navigationBar.bounds];
+    if (self) [self initializator];
+    return self;
+}
+
 - (void)initializator {
     self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.backgroundColor = [UIColor clearColor];
@@ -34,13 +41,6 @@
     _bottomLabel.textColor = GRAYCOLOR_FFC7C7CC;
     _bottomLabel.backgroundColor = [UIColor clearColor];
     [self addSubview:_bottomLabel];
-}
-
-- (instancetype)initWithNavigationBar:(UINavigationBar *)navigationBar {
-    _navigationBar = navigationBar;
-    self = [super initWithFrame:navigationBar.bounds];
-    if (self) [self initializator];
-    return self;
 }
 
 /**

@@ -12,9 +12,9 @@
 
 @interface TACGoogleMaps : NSObject
 
-@property (nonatomic) NSURL *url;
-@property (nonatomic) CLLocation *location;
-@property (nonatomic) NSString *placeName;
+@property (nonatomic, strong) NSURL *url;
+@property (nonatomic, strong) CLLocation *location;
+@property (nonatomic, strong) NSString *placeName;
 
 - (BOOL)canOpen;
 - (void)open;

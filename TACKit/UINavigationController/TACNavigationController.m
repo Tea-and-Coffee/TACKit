@@ -14,10 +14,6 @@
 
 @implementation TACNavigationController
 
-- (void)initializator {
-    // Initialization code
-}
-
 - (instancetype)init {
     self = [super init];
     if (self) [self initializator];
@@ -46,6 +42,10 @@
     self = [super initWithRootViewController:rootViewController];
     if (self) [self initializator];
     return self;
+}
+
+- (void)initializator {
+    // Initialization code
 }
 
 - (void)viewDidLoad {

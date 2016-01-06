@@ -7,6 +7,7 @@
 //
 
 #import "TACSize.h"
+#import "TACDevice.h"
 
 #pragma mark UIStatusBar
 

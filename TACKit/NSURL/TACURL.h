@@ -10,7 +10,7 @@
 
 @interface TACURL : NSObject
 
-- (void)openURLLog:(NSURL *)url;
-- (NSDictionary *)dictionaryFromQueryString:(NSString *)query;
+- (void)printURL:(NSURL *)url;
+- (NSDictionary *)dictionaryFromQuery:(NSString *)query;
 
 @end

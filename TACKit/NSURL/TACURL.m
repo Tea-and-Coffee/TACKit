@@ -11,7 +11,7 @@
 
 @implementation TACURL
 
-- (void)openURLLog:(NSURL *)url {
+- (void)printURL:(NSURL *)url {
     // Ex:
     // NSURL *url = [NSURL URLWithString:@"http://user:password@www.example.com:8080/hoge/fuga/index.html?a=1&b=2#test"];
     
@@ -37,7 +37,7 @@
 }
 
 /* [NSURL query]文字列をNSDictionaryに変換する */
-- (NSDictionary *)dictionaryFromQueryString:(NSString *)query {
+- (NSDictionary *)dictionaryFromQuery:(NSString *)query {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     NSArray *pairs = [query componentsSeparatedByString:@"&"];
     

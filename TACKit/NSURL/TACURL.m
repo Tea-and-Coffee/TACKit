@@ -38,7 +38,7 @@
 
 /* [NSURL query]文字列をNSDictionaryに変換する */
 - (NSDictionary *)dictionaryFromQueryString:(NSString *)query {
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:0];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     NSArray *pairs = [query componentsSeparatedByString:@"&"];
     
     for (NSString *pair in pairs) {

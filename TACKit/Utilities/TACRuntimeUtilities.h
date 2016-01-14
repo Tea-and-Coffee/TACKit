@@ -1,5 +1,5 @@
 //
-//  TACRuntimeuUtilities.h
+//  TACRuntimeUtilities.h
 //  TACKit
 //
 //  Created by masato_arai on 2015/11/27.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TACRuntimeuUtilities : NSObject
+@interface TACRuntimeUtilities : NSObject
 
 + (void)swizzleImplementations:(Class)class1 selector:(SEL)target1 class:(Class)class2 selector:(SEL)target2;
 
@@ -17,5 +17,5 @@
 /**
  * [How To Use]
  *
- * TACRuntimeuUtilitiesTestsに記述した。
+ * TACRuntimeUtilitiesTestsに記述した。
  */

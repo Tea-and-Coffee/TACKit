@@ -1,5 +1,5 @@
 //
-//  TACRuntimeuUtilitiesTests.m
+//  TACRuntimeUtilitiesTests.m
 //  TACKitExample
 //
 //  Created by masato_arai on 2015/11/27.
@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "TACRuntimeuUtilities.h"
+#import "TACRuntimeUtilities.h"
 
 @interface AObject : NSObject
 - (void)print;
@@ -30,11 +30,11 @@
 @end
 
 
-@interface TACRuntimeuUtilitiesTests : XCTestCase
+@interface TACRuntimeUtilitiesTests : XCTestCase
 
 @end
 
-@implementation TACRuntimeuUtilitiesTests
+@implementation TACRuntimeUtilitiesTests
 
 - (void)setUp {
     [super setUp];
@@ -52,18 +52,18 @@
     [a print]; // "Print A, My Name is AObject"
     [b print]; // "Print B, My Name is BObject"
     
-    [TACRuntimeuUtilities swizzleImplementations:[a class] selector:@selector(print) class:[b class] selector:@selector(print)]; // Swizzling
+    [TACRuntimeUtilities swizzleImplementations:[a class] selector:@selector(print) class:[b class] selector:@selector(print)]; // Swizzling
     
     [a print]; // "Print B, My Name is AObject"
     [b print]; // "Print A, My Name is BObject"
     
     //
-    [TACRuntimeuUtilities swizzleImplementations:[a class] selector:@selector(print) class:[b class] selector:@selector(print)]; // Restore
+    [TACRuntimeUtilities swizzleImplementations:[a class] selector:@selector(print) class:[b class] selector:@selector(print)]; // Restore
 }
 
 /// インスタンス生成前に、Method Swizzlingする場合
 - (void)testSwizzle_pattern2 {
-    [TACRuntimeuUtilities swizzleImplementations:[AObject class] selector:@selector(print) class:[BObject class] selector:@selector(print)]; // Swizzling
+    [TACRuntimeUtilities swizzleImplementations:[AObject class] selector:@selector(print) class:[BObject class] selector:@selector(print)]; // Swizzling
     
     AObject *a = [AObject new];
     BObject *b = [BObject new];
@@ -71,7 +71,7 @@
     [a print]; // "Print B, My Name is AObject"
     [b print]; // "Print A, My Name is BObject"
     
-    [TACRuntimeuUtilities swizzleImplementations:[AObject class] selector:@selector(print) class:[BObject class] selector:@selector(print)]; // Restore
+    [TACRuntimeUtilities swizzleImplementations:[AObject class] selector:@selector(print) class:[BObject class] selector:@selector(print)]; // Restore
 }
 
 @end

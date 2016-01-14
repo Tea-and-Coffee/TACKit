@@ -11,5 +11,6 @@
 @interface NSObject (Debug)
 
 - (void)dumpDescription;
+- (void)dumpProperties;
 
 @end

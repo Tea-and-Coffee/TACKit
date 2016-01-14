@@ -7,6 +7,7 @@
 //
 
 #import "TACDevice.h"
+#import "TACScreenUtilities.h"
 
 @implementation TACDevice
 

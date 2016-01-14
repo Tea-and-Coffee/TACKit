@@ -7,6 +7,8 @@
 //
 
 #import "NSObject+Debug.h"
+#import "TACDebugLog.h"
+#import "NSObject+Common.h"
 
 @implementation NSObject (Debug)
 
@@ -16,7 +18,16 @@
     s = [s stringByReplacingOccurrencesOfString:@"{" withString:@"{\n "];
     s = [s stringByReplacingOccurrencesOfString:@"; " withString:@";\n "];
     s = [s stringByReplacingOccurrencesOfString:@" }" withString:@"}"];
-    NSLog(@"%@", s);
+    DLog(@"%@", s);
+}
+
+/** プロパティーの型と名を出力する */
+- (void)dumpProperties {
+    NSDictionary *properties = [self properties];
+    [properties enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull name, NSString * _Nonnull type, BOOL * _Nonnull stop) {
+        id value = [self valueForKey:name];
+        DLog(@"%@(%@): %@", name, type, value);
+    }];
 }
 
 @end

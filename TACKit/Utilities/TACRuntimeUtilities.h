@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 @interface TACRuntimeUtilities : NSObject
 
 + (void)swizzleImplementations:(Class)class1 selector:(SEL)target1 class:(Class)class2 selector:(SEL)target2;
+
+OBJC_EXPORT const char *property_getType(objc_property_t property);
 
 @end
 
 /**
  * [How To Use]
  *
+ * swizzleImplementations:selector:class:selector
  * TACRuntimeUtilitiesTestsに記述した。
  */

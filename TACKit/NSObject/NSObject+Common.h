@@ -12,4 +12,7 @@
 
 + (NSString *)identifier;
 
+- (NSArray<NSString *> *)propertyNames;
+- (NSDictionary<NSString *, NSString *> *)properties;
+
 @end

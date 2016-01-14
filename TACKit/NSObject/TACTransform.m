@@ -19,7 +19,8 @@ static NSString * const httpScheme = @"https";
 
 #pragma mark
 #pragma mark Return value is NSString Methods.
-/// NSStringに、httpSchemeを付与して返す
+
+/** NSStringに、httpSchemeを付与して返す */
 + (NSString *)appendingHttpScheme:(NSString *)target {
     if (!target) {
         return target;
@@ -49,7 +50,8 @@ static NSString * const httpScheme = @"https";
 
 #pragma mark
 #pragma mark Return value is NSDate Methods.
-/// NSDateFormatterStyleを変更したNSDateを返す
+
+/** NSDateFormatterStyleを変更したNSDateを返す */
 + (NSDate *)dateFromDate:(NSDate *)date dateStyle:(NSDateFormatterStyle)dstyle timeStyle:(NSDateFormatterStyle)tstyle {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateStyle = dstyle;
@@ -62,7 +64,8 @@ static NSString * const httpScheme = @"https";
 
 #pragma mark
 #pragma mark NSMutableDictionary Methods.
-/// NSMutableDictionaryの全要素をNSStringへ変換する
+
+/** NSMutableDictionaryの全要素をNSStringへ変換する */
 + (void)changeAllValuesByString:(NSMutableDictionary *)targetDictionary {
     for (NSString *key in targetDictionary.allKeys) {
         
@@ -99,7 +102,8 @@ static NSString * const httpScheme = @"https";
 
 #pragma mark
 #pragma mark Return value is UIImage Methods.
-/// UIViewをUIImageに変換する
+
+/** UIViewをUIImageに変換する */
 + (UIImage *)imageFromView:(UIView *)view {
     // UIView サイズの画像コンテキストを確保
     UIGraphicsBeginImageContextWithOptions(view.frame.size, YES, 0);
@@ -124,7 +128,8 @@ static NSString * const httpScheme = @"https";
 
 #pragma mark
 #pragma mark Return value is UITableViewCell Methods.
-/// 子要素のUIViewから、親のUITableViewCellを返す
+
+/** 子要素のUIViewから、親のUITableViewCellを返す */
 + (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtSubview:(UIView *)subview {
     CGPoint convertedPoint = [subview convertPoint:CGPointZero toView:tableView];
     NSIndexPath *indexPath = [tableView indexPathForRowAtPoint:convertedPoint];

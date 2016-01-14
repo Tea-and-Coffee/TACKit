@@ -10,7 +10,7 @@
 
 @implementation UIImage (Trimming)
 
-/* UIImageを指定したCGRectでトリミングする */
+/** UIImageを指定したCGRectでトリミングする */
 - (UIImage *)trimmingOfRect:(CGRect)rect {
     CGPoint originDrawPoint = CGPointMake(rect.origin.x * -1, rect.origin.y * -1);
     

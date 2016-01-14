@@ -10,7 +10,7 @@
 
 @implementation NSObject (Debug)
 
-/// 改行付きでDescriptionを出力する
+/** 改行付きでDescriptionを出力する */
 - (void)dumpDescription {
     NSString *s = self.description;
     s = [s stringByReplacingOccurrencesOfString:@"{" withString:@"{\n "];

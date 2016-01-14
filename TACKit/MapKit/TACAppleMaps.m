@@ -11,7 +11,7 @@
 
 @implementation TACAppleMaps
 
-/* CLLocationからApple Maps.appを開く */
+/** CLLocationからApple Maps.appを開く */
 - (void)open {
     
     // MKPlacemark 生成

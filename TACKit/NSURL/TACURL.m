@@ -36,7 +36,7 @@
     DLog(@"user: %@", [url user]);
 }
 
-/* [NSURL query]文字列をNSDictionaryに変換する */
+/** [NSURL query]文字列をNSDictionaryに変換する */
 - (NSDictionary *)dictionaryFromQuery:(NSString *)query {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     NSArray *pairs = [query componentsSeparatedByString:@"&"];

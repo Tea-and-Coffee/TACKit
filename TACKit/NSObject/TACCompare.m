@@ -12,7 +12,7 @@
 
 #pragma mark
 #pragma mark The Comparison Methods.
-/// stringAとstringBを比較し、同じならYESを返す
+/** stringAとstringBを比較し、同じならYESを返す */
 + (BOOL)compareWithString:(id)aString string:(id)bString {
     if ([self isNil:aString string:bString]) {
         return NO;
@@ -24,7 +24,7 @@
         return NO;
     }
 }
-/// objectAのクラス名とstringAを比較し、同じならYESを返す
+/** objectAのクラス名とstringAを比較し、同じならYESを返す */
 + (BOOL)compareWithObject:(id)aObject string:(id)aString {
     NSString *aClassName = NSStringFromClass([aObject class]);
     if ([self isNil:aString string:aClassName]) {
@@ -37,7 +37,7 @@
         return NO;
     }
 }
-/// objectAとobjectBのクラス名を比較し、同じならYESを返す
+/** objectAとobjectBのクラス名を比較し、同じならYESを返す */
 + (BOOL)compareWithObject:(id)aObject object:(id)bObject {
     NSString *aClassName = NSStringFromClass([aObject class]);
     NSString *bClassName = NSStringFromClass([bObject class]);
@@ -61,7 +61,7 @@
 
 #pragma mark
 #pragma mark The 正規表現 Methods.
-/// メールアドレスが正規表現ならYESを返す
+/** メールアドレスが正規表現ならYESを返す */
 + (BOOL)isValidateEmail:(NSString *)email {
     NSString *pattern = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES%@", pattern];

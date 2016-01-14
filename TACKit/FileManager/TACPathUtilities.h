@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-/// Applications/<GUID>/Library/Caches/<identifier>/<Directory>
+/** Applications/<GUID>/Library/Caches/<identifier>/<Directory> */
 typedef NS_ENUM(NSUInteger, TACSearchPathDirectory) {
     TACCachesDirectory = 0,
     TACDocumentDirectory,
@@ -21,11 +21,11 @@ typedef NS_ENUM(NSUInteger, TACSearchPathDirectory) {
 
 @interface TACPathUtilities : NSObject
 
-FOUNDATION_EXPORT NSString *TACSearchPathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
-FOUNDATION_EXPORT NSString *TACCreatePathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
-FOUNDATION_EXPORT NSString *TACCreatePathForTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
-FOUNDATION_EXPORT BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
-FOUNDATION_EXPORT BOOL TACRemoveTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+OBJC_EXPORT NSString *TACSearchPathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+OBJC_EXPORT NSString *TACCreatePathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+OBJC_EXPORT NSString *TACCreatePathForTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+OBJC_EXPORT BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+OBJC_EXPORT BOOL TACRemoveTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
 
 BOOL createDirectoryAtPath(NSString *path);
 BOOL removeItemAtPath(NSString *path);

@@ -44,7 +44,7 @@
     [super tearDown];
 }
 
-/// インスタンス生成後に、Method Swizzlingする場合
+/** インスタンス生成後に、Method Swizzlingする場合 */
 - (void)testSwizzle_pattern1 {
     AObject *a = [AObject new];
     BObject *b = [BObject new];
@@ -61,7 +61,7 @@
     [TACRuntimeUtilities swizzleImplementations:[a class] selector:@selector(print) class:[b class] selector:@selector(print)]; // Restore
 }
 
-/// インスタンス生成前に、Method Swizzlingする場合
+/** インスタンス生成前に、Method Swizzlingする場合 */
 - (void)testSwizzle_pattern2 {
     [TACRuntimeUtilities swizzleImplementations:[AObject class] selector:@selector(print) class:[BObject class] selector:@selector(print)]; // Swizzling
     

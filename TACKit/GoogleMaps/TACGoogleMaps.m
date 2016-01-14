@@ -10,7 +10,7 @@
 
 @implementation TACGoogleMaps
 
-/* CLLocationからGoogle Maps.appが開けるかを確認する */
+/** CLLocationからGoogle Maps.appが開けるかを確認する */
 - (BOOL)canOpen {
     NSString *escapedPlaceName = CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,
                                                                                            (CFStringRef)self.placeName,
@@ -27,7 +27,7 @@
     return NO;
 }
 
-/* Google Maps.appを開く */
+/** Google Maps.appを開く */
 - (void)open {
     [[UIApplication sharedApplication] openURL:self.url];
 }

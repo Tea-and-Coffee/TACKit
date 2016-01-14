@@ -17,35 +17,35 @@ static CGFloat const EIGHTH_MARGIN  = MARGIN / 8;
 
 
 // UIStatusBar
-FOUNDATION_EXPORT CGFloat statusBarHeight();
-FOUNDATION_EXPORT CGFloat statusBarPortraitHeight();
-FOUNDATION_EXPORT CGFloat statusBarLandscapeHeight();
+OBJC_EXPORT CGFloat statusBarHeight();
+OBJC_EXPORT CGFloat statusBarPortraitHeight();
+OBJC_EXPORT CGFloat statusBarLandscapeHeight();
 
 // UIStatusBar (InCall)
-FOUNDATION_EXPORT CGFloat statusBarInCallHeight();
-FOUNDATION_EXPORT CGFloat statusBarInCallPortraitHeight();
-FOUNDATION_EXPORT CGFloat statusBarInCallLandscapeHeight();
+OBJC_EXPORT CGFloat statusBarInCallHeight();
+OBJC_EXPORT CGFloat statusBarInCallPortraitHeight();
+OBJC_EXPORT CGFloat statusBarInCallLandscapeHeight();
 
 // UINavigationBar
-FOUNDATION_EXPORT CGFloat navigationBarHeight();
-FOUNDATION_EXPORT CGFloat navigationBarPortraitHeight();
-FOUNDATION_EXPORT CGFloat navigationBarLandscapeHeight();
+OBJC_EXPORT CGFloat navigationBarHeight();
+OBJC_EXPORT CGFloat navigationBarPortraitHeight();
+OBJC_EXPORT CGFloat navigationBarLandscapeHeight();
 
 // UINavigationBar (Prompt)
-FOUNDATION_EXPORT CGFloat navigationBarPromptHeight();
-FOUNDATION_EXPORT CGFloat navigationBarPromptPortraitHeight();
-FOUNDATION_EXPORT CGFloat navigationBarPromptLandscapeHeight();
+OBJC_EXPORT CGFloat navigationBarPromptHeight();
+OBJC_EXPORT CGFloat navigationBarPromptPortraitHeight();
+OBJC_EXPORT CGFloat navigationBarPromptLandscapeHeight();
 
 // UIToolbar
-FOUNDATION_EXPORT CGFloat toolbarHeight();
-FOUNDATION_EXPORT CGFloat toolbarPortraitHeight();
-FOUNDATION_EXPORT CGFloat toolbarLandscapeHeight();
+OBJC_EXPORT CGFloat toolbarHeight();
+OBJC_EXPORT CGFloat toolbarPortraitHeight();
+OBJC_EXPORT CGFloat toolbarLandscapeHeight();
 
 // UIToolbar (Custom)
-FOUNDATION_EXPORT CGFloat customToolbarHeight();
+OBJC_EXPORT CGFloat customToolbarHeight();
 
 // UITabBar
-FOUNDATION_EXPORT CGFloat tabBarHeight();
+OBJC_EXPORT CGFloat tabBarHeight();
 
 
 // UITableViewCell

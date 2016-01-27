@@ -45,6 +45,8 @@
 #import "UITableViewCell+Common.h"
 #import "TACPlaceHolderTextView.h"
 #import "TACBorderView.h"
+#import "TACDottedLineView.h"
+#import "TACLineView.h"
 #import "TACView.h"
 #import "UIView+Common.h"
 #import "UIView+Debug.h"

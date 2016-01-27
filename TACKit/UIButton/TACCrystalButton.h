@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-/** タッチした時に背景色が付く、透明なボタン */
+/**
+ * タッチした時に背景色が付く、透明なボタン
+ */
 
 @interface TACCrystalButton : UIButton
 

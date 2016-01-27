@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */; };
 		260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F31C589D05007BB06A /* NSNull+isNull.m */; };
+		260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F91C58A2A6007BB06A /* TACBorderView.m */; };
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeUtilities.m */; };
@@ -67,6 +68,8 @@
 		260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Arithmetic.m"; sourceTree = "<group>"; };
 		260C74F21C589D05007BB06A /* NSNull+isNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+isNull.h"; sourceTree = "<group>"; };
 		260C74F31C589D05007BB06A /* NSNull+isNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+isNull.m"; sourceTree = "<group>"; };
+		260C74F81C58A2A6007BB06A /* TACBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACBorderView.h; sourceTree = "<group>"; };
+		260C74F91C58A2A6007BB06A /* TACBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACBorderView.m; sourceTree = "<group>"; };
 		DC0B2D831BF9CB880005FD7B /* NSObject+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Debug.h"; sourceTree = "<group>"; };
 		DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Debug.m"; sourceTree = "<group>"; };
 		DC5EA44D1C083E1A0098BE60 /* UIStoryboard+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewController.h"; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 		F43C3DFE1B577BC9008DCA99 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				260C74F81C58A2A6007BB06A /* TACBorderView.h */,
+				260C74F91C58A2A6007BB06A /* TACBorderView.m */,
 				F43C3DFF1B577BC9008DCA99 /* TACView.h */,
 				F43C3E001B577BC9008DCA99 /* TACView.m */,
 				F43C3E011B577BC9008DCA99 /* UIView+Common.h */,
@@ -616,6 +621,7 @@
 				F43C3E151B577BC9008DCA99 /* UIAlertView+HTTPStatus.m in Sources */,
 				F43C3E141B577BC9008DCA99 /* UIAlertView+Error.m in Sources */,
 				F43C3E121B577BC9008DCA99 /* TACURL.m in Sources */,
+				260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */,
 				F43C3E0E1B577BC9008DCA99 /* NSObject+Common.m in Sources */,
 				F43C3E171B577BC9008DCA99 /* UIImage+Trimming.m in Sources */,
 				F43C3E191B577BC9008DCA99 /* TACVerticalTwoTitleView.m in Sources */,

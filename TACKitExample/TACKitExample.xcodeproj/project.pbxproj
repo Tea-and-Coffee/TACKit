@@ -10,6 +10,7 @@
 		260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */; };
 		260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F31C589D05007BB06A /* NSNull+isNull.m */; };
 		260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F91C58A2A6007BB06A /* TACBorderView.m */; };
+		260C74FE1C58AE01007BB06A /* TACCrystalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74FD1C58AE01007BB06A /* TACCrystalButton.m */; };
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeUtilities.m */; };
@@ -70,6 +71,8 @@
 		260C74F31C589D05007BB06A /* NSNull+isNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+isNull.m"; sourceTree = "<group>"; };
 		260C74F81C58A2A6007BB06A /* TACBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACBorderView.h; sourceTree = "<group>"; };
 		260C74F91C58A2A6007BB06A /* TACBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACBorderView.m; sourceTree = "<group>"; };
+		260C74FC1C58AE01007BB06A /* TACCrystalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACCrystalButton.h; sourceTree = "<group>"; };
+		260C74FD1C58AE01007BB06A /* TACCrystalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACCrystalButton.m; sourceTree = "<group>"; };
 		DC0B2D831BF9CB880005FD7B /* NSObject+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Debug.h"; sourceTree = "<group>"; };
 		DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Debug.m"; sourceTree = "<group>"; };
 		DC5EA44D1C083E1A0098BE60 /* UIStoryboard+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewController.h"; sourceTree = "<group>"; };
@@ -195,6 +198,15 @@
 			path = NSNull;
 			sourceTree = "<group>";
 		};
+		260C74FB1C58ADE0007BB06A /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				260C74FC1C58AE01007BB06A /* TACCrystalButton.h */,
+				260C74FD1C58AE01007BB06A /* TACCrystalButton.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		DC5EA44C1C083D440098BE60 /* UIStoryboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +263,7 @@
 				F43C3DC51B577BC9008DCA99 /* NSObject */,
 				F43C3DCE1B577BC9008DCA99 /* NSURL */,
 				F43C3DDA1B577BC9008DCA99 /* UIAlertView */,
+				260C74FB1C58ADE0007BB06A /* UIButton */,
 				FBD5B7471C1C9EB500248753 /* UIDevice */,
 				F43C3DDF1B577BC9008DCA99 /* UIImage */,
 				F43C3DE41B577BC9008DCA99 /* UINavigationController */,
@@ -636,6 +649,7 @@
 				F49EC1681B5779B300820ED2 /* AppDelegate.m in Sources */,
 				F43C3E1D1B577BC9008DCA99 /* TACTableViewCellStyleSubtitle.m in Sources */,
 				F43C3E1B1B577BC9008DCA99 /* TACTableView.m in Sources */,
+				260C74FE1C58AE01007BB06A /* TACCrystalButton.m in Sources */,
 				F43C3E1F1B577BC9008DCA99 /* TACTableViewCellStyleValue2.m in Sources */,
 				260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */,
 				DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */,

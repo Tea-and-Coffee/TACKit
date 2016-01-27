@@ -29,6 +29,7 @@
 #import "TACURL.h"
 #import "UIAlertView+Error.h"
 #import "UIAlertView+HTTPStatus.h"
+#import "TACCrystalButton.h"
 #import "TACDevice.h"
 #import "UIImage+CommonImage.h"
 #import "UIImage+Trimming.h"

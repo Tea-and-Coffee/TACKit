@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260C74EC1C58994C007BB06A /* NSNumber+Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74EB1C58994C007BB06A /* NSNumber+Arithmetic.m */; };
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeUtilities.m */; };
@@ -61,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260C74EA1C58994C007BB06A /* NSNumber+Arithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Arithmetic.h"; sourceTree = "<group>"; };
+		260C74EB1C58994C007BB06A /* NSNumber+Arithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Arithmetic.m"; sourceTree = "<group>"; };
 		DC0B2D831BF9CB880005FD7B /* NSObject+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Debug.h"; sourceTree = "<group>"; };
 		DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Debug.m"; sourceTree = "<group>"; };
 		DC5EA44D1C083E1A0098BE60 /* UIStoryboard+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewController.h"; sourceTree = "<group>"; };
@@ -168,6 +171,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260C74E91C589922007BB06A /* NSDecimal */ = {
+			isa = PBXGroup;
+			children = (
+				260C74EA1C58994C007BB06A /* NSNumber+Arithmetic.h */,
+				260C74EB1C58994C007BB06A /* NSNumber+Arithmetic.m */,
+			);
+			path = NSDecimal;
+			sourceTree = "<group>";
+		};
 		DC5EA44C1C083D440098BE60 /* UIStoryboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +231,7 @@
 				F43C3DBC1B577BC9008DCA99 /* GoogleMaps */,
 				F43C3DBF1B577BC9008DCA99 /* MapKit */,
 				F43C3DC21B577BC9008DCA99 /* NSData */,
+				260C74E91C589922007BB06A /* NSDecimal */,
 				F43C3DC51B577BC9008DCA99 /* NSObject */,
 				F43C3DCE1B577BC9008DCA99 /* NSURL */,
 				F43C3DDA1B577BC9008DCA99 /* UIAlertView */,
@@ -604,6 +617,7 @@
 				F43C3E1D1B577BC9008DCA99 /* TACTableViewCellStyleSubtitle.m in Sources */,
 				F43C3E1B1B577BC9008DCA99 /* TACTableView.m in Sources */,
 				F43C3E1F1B577BC9008DCA99 /* TACTableViewCellStyleValue2.m in Sources */,
+				260C74EC1C58994C007BB06A /* NSNumber+Arithmetic.m in Sources */,
 				DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */,
 				F43C3E0C1B577BC9008DCA99 /* TACAppleMaps.m in Sources */,
 				F43C3E0A1B577BC9008DCA99 /* TACPathUtilities.m in Sources */,

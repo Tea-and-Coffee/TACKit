@@ -1,18 +1,18 @@
 //
-//  UIPlaceHolderTextView.m
+//  TACPlaceHolderTextView.m
 //  TACKit
 //
 //  Created by masato_arai on 2015/04/27.
 //  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
-#import "UIPlaceHolderTextView.h"
+#import "TACPlaceHolderTextView.h"
 
-@interface UIPlaceHolderTextView ()
+@interface TACPlaceHolderTextView ()
 
 @end
 
-@implementation UIPlaceHolderTextView
+@implementation TACPlaceHolderTextView
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];

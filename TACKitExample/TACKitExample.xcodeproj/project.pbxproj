@@ -47,7 +47,7 @@
 		F49EC1701B5779B300820ED2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49EC16F1B5779B300820ED2 /* Images.xcassets */; };
 		F49EC1731B5779B300820ED2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49EC1711B5779B300820ED2 /* LaunchScreen.xib */; };
 		F49EC17F1B5779B300820ED2 /* TACKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */; };
-		F49EC18B1B578EC800820ED2 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC18A1B578EC800820ED2 /* UIPlaceHolderTextView.m */; };
+		F49EC18B1B578EC800820ED2 /* TACPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */; };
 		FBD5B7461C1C9EA200248753 /* TACSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7451C1C9EA200248753 /* TACSize.m */; };
 		FBD5B74A1C1C9EB500248753 /* TACDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7491C1C9EB500248753 /* TACDevice.m */; };
 /* End PBXBuildFile section */
@@ -148,8 +148,8 @@
 		F49EC17D1B5779B300820ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TACKitExampleTests.m; sourceTree = "<group>"; };
 		F49EC1881B577CEB00820ED2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		F49EC1891B578EC800820ED2 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
-		F49EC18A1B578EC800820ED2 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		F49EC1891B578EC800820ED2 /* TACPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACPlaceHolderTextView.h; sourceTree = "<group>"; };
+		F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACPlaceHolderTextView.m; sourceTree = "<group>"; };
 		FBD5B7441C1C9EA200248753 /* TACSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACSize.h; sourceTree = "<group>"; };
 		FBD5B7451C1C9EA200248753 /* TACSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACSize.m; sourceTree = "<group>"; };
 		FBD5B7481C1C9EB500248753 /* TACDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACDevice.h; sourceTree = "<group>"; };
@@ -403,8 +403,8 @@
 		F43C3DFB1B577BC9008DCA99 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				F49EC1891B578EC800820ED2 /* UIPlaceHolderTextView.h */,
-				F49EC18A1B578EC800820ED2 /* UIPlaceHolderTextView.m */,
+				F49EC1891B578EC800820ED2 /* TACPlaceHolderTextView.h */,
+				F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -626,7 +626,7 @@
 				F43C3E1A1B577BC9008DCA99 /* TACScreenUtilities.m in Sources */,
 				260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */,
 				F43C3E131B577BC9008DCA99 /* TACDebugMode.m in Sources */,
-				F49EC18B1B578EC800820ED2 /* UIPlaceHolderTextView.m in Sources */,
+				F49EC18B1B578EC800820ED2 /* TACPlaceHolderTextView.m in Sources */,
 				F49EC1681B5779B300820ED2 /* AppDelegate.m in Sources */,
 				F43C3E1D1B577BC9008DCA99 /* TACTableViewCellStyleSubtitle.m in Sources */,
 				F43C3E1B1B577BC9008DCA99 /* TACTableView.m in Sources */,

@@ -42,7 +42,7 @@
 #import "TACTableViewCellStyleValue1.h"
 #import "TACTableViewCellStyleValue2.h"
 #import "UITableViewCell+Common.h"
-#import "UIPlaceHolderTextView.h"
+#import "TACPlaceHolderTextView.h"
 #import "TACView.h"
 #import "UIView+Common.h"
 #import "UIView+Debug.h"

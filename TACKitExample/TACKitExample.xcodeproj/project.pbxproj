@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */; };
+		260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F31C589D05007BB06A /* NSNull+isNull.m */; };
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeUtilities.m */; };
@@ -64,6 +65,8 @@
 /* Begin PBXFileReference section */
 		260C74EE1C589C96007BB06A /* NSNumber+Arithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Arithmetic.h"; sourceTree = "<group>"; };
 		260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Arithmetic.m"; sourceTree = "<group>"; };
+		260C74F21C589D05007BB06A /* NSNull+isNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+isNull.h"; sourceTree = "<group>"; };
+		260C74F31C589D05007BB06A /* NSNull+isNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+isNull.m"; sourceTree = "<group>"; };
 		DC0B2D831BF9CB880005FD7B /* NSObject+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Debug.h"; sourceTree = "<group>"; };
 		DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Debug.m"; sourceTree = "<group>"; };
 		DC5EA44D1C083E1A0098BE60 /* UIStoryboard+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewController.h"; sourceTree = "<group>"; };
@@ -180,6 +183,15 @@
 			path = NSNumbar;
 			sourceTree = "<group>";
 		};
+		260C74F11C589CE7007BB06A /* NSNull */ = {
+			isa = PBXGroup;
+			children = (
+				260C74F21C589D05007BB06A /* NSNull+isNull.h */,
+				260C74F31C589D05007BB06A /* NSNull+isNull.m */,
+			);
+			path = NSNull;
+			sourceTree = "<group>";
+		};
 		DC5EA44C1C083D440098BE60 /* UIStoryboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +243,7 @@
 				F43C3DBC1B577BC9008DCA99 /* GoogleMaps */,
 				F43C3DBF1B577BC9008DCA99 /* MapKit */,
 				F43C3DC21B577BC9008DCA99 /* NSData */,
+				260C74F11C589CE7007BB06A /* NSNull */,
 				260C74ED1C589C96007BB06A /* NSNumbar */,
 				F43C3DC51B577BC9008DCA99 /* NSObject */,
 				F43C3DCE1B577BC9008DCA99 /* NSURL */,
@@ -611,6 +624,7 @@
 				DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */,
 				F43C3E161B577BC9008DCA99 /* UIImage+CommonImage.m in Sources */,
 				F43C3E1A1B577BC9008DCA99 /* TACScreenUtilities.m in Sources */,
+				260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */,
 				F43C3E131B577BC9008DCA99 /* TACDebugMode.m in Sources */,
 				F49EC18B1B578EC800820ED2 /* UIPlaceHolderTextView.m in Sources */,
 				F49EC1681B5779B300820ED2 /* AppDelegate.m in Sources */,

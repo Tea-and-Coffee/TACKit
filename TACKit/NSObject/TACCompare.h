@@ -10,8 +10,8 @@
 
 @interface TACCompare : NSObject
 
-+ (BOOL)compareWithString:(id)aString string:(id)bString;
-+ (BOOL)compareWithObject:(id)aObject string:(id)aString;
++ (BOOL)compareWithString:(NSString *)aString string:(NSString *)bString;
++ (BOOL)compareWithObject:(id)aObject string:(NSString *)aString;
 + (BOOL)compareWithObject:(id)aObject object:(id)bObject;
 
 + (BOOL)isValidateEmail:(NSString *)email;

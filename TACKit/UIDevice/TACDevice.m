@@ -32,8 +32,8 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
 #pragma mark
 #pragma mark TACUserInterfaceIdiom
 
-+ (TACUserInterfaceIdiom)userInterfaceIdiom {
-    TACUserInterfaceIdentifier identifier = [self userInterfaceIdentifier];
++ (TACUserInterfaceIdiom)idiom {
+    TACUserInterfaceIdentifier identifier = [self identifier];
     switch (identifier) {
         case TACUserInterfaceIdentifierUnspecified:
             return TACUserInterfaceIdiomUnspecified;
@@ -53,22 +53,22 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
 }
 
 + (BOOL)isPhone {
-    return [self userInterfaceIdiom] == TACUserInterfaceIdiomPhone;
+    return [self idiom] == TACUserInterfaceIdiomPhone;
 }
 
 + (BOOL)isPhablet {
-    return [self userInterfaceIdiom] == TACUserInterfaceIdiomPhablet;
+    return [self idiom] == TACUserInterfaceIdiomPhablet;
 }
 
 + (BOOL)isPad {
-    return [self userInterfaceIdiom] == TACUserInterfaceIdiomPad;
+    return [self idiom] == TACUserInterfaceIdiomPad;
 }
 
 
 #pragma mark
 #pragma mark TACUserInterfaceIdentifier
 
-+ (TACUserInterfaceIdentifier)userInterfaceIdentifier {
++ (TACUserInterfaceIdentifier)identifier {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         if ([[UIScreen mainScreen] nativeScale] == 1.0) {
             if ([TACScreenUtilities boundsSize].height == kHeight_3_5) {
@@ -104,39 +104,39 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
 }
 
 + (BOOL)isUnspecified {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierUnspecified;
+    return [self identifier] == TACUserInterfaceIdentifierUnspecified;
 }
 
 + (BOOL)isIPhone3 {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPhone3;
+    return [self identifier] == TACUserInterfaceIdentifierIPhone3;
 }
 
 + (BOOL)isIPhone4 {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPhone4;
+    return [self identifier] == TACUserInterfaceIdentifierIPhone4;
 }
 
 + (BOOL)isIPhone5 {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPhone5;
+    return [self identifier] == TACUserInterfaceIdentifierIPhone5;
 }
 
 + (BOOL)isIPhone6 {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPhone6;
+    return [self identifier] == TACUserInterfaceIdentifierIPhone6;
 }
 
 + (BOOL)isIPhone6Plus {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPhone6_Plus;
+    return [self identifier] == TACUserInterfaceIdentifierIPhone6_Plus;
 }
 
 + (BOOL)isIPad {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPad;
+    return [self identifier] == TACUserInterfaceIdentifierIPad;
 }
 
 + (BOOL)isIPadRetina {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPad_Retina;
+    return [self identifier] == TACUserInterfaceIdentifierIPad_Retina;
 }
 
 + (BOOL)isIPadPro {
-    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPad_Pro;
+    return [self identifier] == TACUserInterfaceIdentifierIPad_Pro;
 }
 
 @end

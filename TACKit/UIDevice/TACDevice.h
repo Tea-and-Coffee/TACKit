@@ -30,12 +30,12 @@ typedef NS_ENUM(NSInteger, TACUserInterfaceIdentifier) {
     TACUserInterfaceIdentifierIPad_Pro
 };
 
-+ (TACUserInterfaceIdiom)userInterfaceIdiom;
++ (TACUserInterfaceIdiom)idiom;
 + (BOOL)isPhone;
 + (BOOL)isPhablet;
 + (BOOL)isPad;
 
-+ (TACUserInterfaceIdentifier)userInterfaceIdentifier;
++ (TACUserInterfaceIdentifier)identifier;
 + (BOOL)isUnspecified;
 + (BOOL)isIPhone3;
 + (BOOL)isIPhone4;

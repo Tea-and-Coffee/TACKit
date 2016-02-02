@@ -30,7 +30,7 @@ CGFloat statusBarPortraitHeight() {
 }
 
 CGFloat statusBarLandscapeHeight() {
-    switch ([TACDevice userInterfaceIdiom]) {
+    switch ([TACDevice idiom]) {
         case TACUserInterfaceIdiomUnspecified:
             return 0;
         case TACUserInterfaceIdiomPhone:
@@ -59,7 +59,7 @@ CGFloat statusBarInCallHeight() {
 }
 
 CGFloat statusBarInCallPortraitHeight() {
-    switch ([TACDevice userInterfaceIdiom]) {
+    switch ([TACDevice idiom]) {
         case TACUserInterfaceIdiomUnspecified:
             return 0;
         case TACUserInterfaceIdiomPhone:
@@ -72,7 +72,7 @@ CGFloat statusBarInCallPortraitHeight() {
 }
 
 CGFloat statusBarInCallLandscapeHeight() {
-    switch ([TACDevice userInterfaceIdiom]) {
+    switch ([TACDevice idiom]) {
         case TACUserInterfaceIdiomUnspecified:
             return 0;
         case TACUserInterfaceIdiomPhone:
@@ -106,7 +106,7 @@ CGFloat navigationBarPortraitHeight() {
 }
 
 CGFloat navigationBarLandscapeHeight() {
-    switch ([TACDevice userInterfaceIdiom]) {
+    switch ([TACDevice idiom]) {
         case TACUserInterfaceIdiomUnspecified:
             return 0;
         case TACUserInterfaceIdiomPhone:
@@ -138,7 +138,7 @@ CGFloat navigationBarPromptPortraitHeight() {
 }
 
 CGFloat navigationBarPromptLandscapeHeight() {
-    switch ([TACDevice userInterfaceIdiom]) {
+    switch ([TACDevice idiom]) {
         case TACUserInterfaceIdiomUnspecified:
             return 0;
         case TACUserInterfaceIdiomPhone:
@@ -172,7 +172,7 @@ CGFloat toolbarPortraitHeight() {
 }
 
 CGFloat toolbarLandscapeHeight() {
-    switch ([TACDevice userInterfaceIdiom]) {
+    switch ([TACDevice idiom]) {
         case TACUserInterfaceIdiomUnspecified:
             return 0;
         case TACUserInterfaceIdiomPhone:

@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, TACUserInterfaceIdentifier) {
     TACUserInterfaceIdentifierIPhone6_Plus,
     TACUserInterfaceIdentifierIPad,
     TACUserInterfaceIdentifierIPad_Retina,
+    TACUserInterfaceIdentifierIPad_Pro
 };
 
 + (TACUserInterfaceIdiom)userInterfaceIdiom;
@@ -43,5 +44,6 @@ typedef NS_ENUM(NSInteger, TACUserInterfaceIdentifier) {
 + (BOOL)isIPhone6Plus;
 + (BOOL)isIPad;
 + (BOOL)isIPadRetina;
++ (BOOL)isIPadPro;
 
 @end

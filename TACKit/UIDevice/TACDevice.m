@@ -13,18 +13,20 @@
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-variable"
-static CGFloat const kWidth_3_5     = 320.0;
-static CGFloat const kWidth_4_0     = 320.0;
-static CGFloat const kWidth_4_7     = 375.0;
-static CGFloat const kWidth_5_5     = 414.0;
-static CGFloat const kWidth_IPad    = 768.0;
+static CGFloat const kWidth_3_5         =  320.0;
+static CGFloat const kWidth_4_0         =  320.0;
+static CGFloat const kWidth_4_7         =  375.0;
+static CGFloat const kWidth_5_5         =  414.0;
+static CGFloat const kWidth_IPad        =  768.0;
+static CGFloat const kWidth_IPad_Pro    = 1024.0;
 #pragma clang diagnostic pop;
 
-static CGFloat const kHeight_3_5    = 480.0;
-static CGFloat const kHeight_4_0    = 568.0;
-static CGFloat const kHeight_4_7    = 667.0;
-static CGFloat const kHeight_5_5    = 736.0;
-static CGFloat const kHeight_IPad   = 1024.0;
+static CGFloat const kHeight_3_5        =  480.0;
+static CGFloat const kHeight_4_0        =  568.0;
+static CGFloat const kHeight_4_7        =  667.0;
+static CGFloat const kHeight_5_5        =  736.0;
+static CGFloat const kHeight_IPad       = 1024.0;
+static CGFloat const kHeight_IPad_Pro   = 1366.0;
 
 
 #pragma mark
@@ -44,6 +46,7 @@ static CGFloat const kHeight_IPad   = 1024.0;
             return TACUserInterfaceIdiomPhablet;
         case TACUserInterfaceIdentifierIPad:
         case TACUserInterfaceIdentifierIPad_Retina:
+        case TACUserInterfaceIdentifierIPad_Pro:
             return TACUserInterfaceIdiomPad;
     }
     return TACUserInterfaceIdiomUnspecified;
@@ -92,6 +95,8 @@ static CGFloat const kHeight_IPad   = 1024.0;
         } else if ([[UIScreen mainScreen] nativeScale] == 2.0) {
             if ([TACScreenUtilities boundsSize].height == kHeight_IPad) {
                 return TACUserInterfaceIdentifierIPad_Retina;
+            } else if ([TACScreenUtilities boundsSize].height == kHeight_IPad_Pro) {
+                return TACUserInterfaceIdentifierIPad_Pro;
             }
         }
     }
@@ -128,6 +133,10 @@ static CGFloat const kHeight_IPad   = 1024.0;
 
 + (BOOL)isIPadRetina {
     return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPad_Retina;
+}
+
++ (BOOL)isIPadPro {
+    return [self userInterfaceIdentifier] == TACUserInterfaceIdentifierIPad_Pro;
 }
 
 @end

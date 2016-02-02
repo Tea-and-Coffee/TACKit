@@ -11,6 +11,21 @@
 
 @implementation TACDevice
 
+NSString * const TACUserInterfaceIdiomUnspecifiedKey        = @"Unspecified";
+NSString * const TACUserInterfaceIdiomPhoneKey              = @"Phone";
+NSString * const TACUserInterfaceIdiomPhabletKey            = @"Phablet";
+NSString * const TACUserInterfaceIdiomPadKey                = @"Pad";
+
+NSString * const TACUserInterfaceIdentifierUnspecifiedKey   = @"Unspecified";
+NSString * const TACUserInterfaceIdentifierIPhone3Key       = @"iPhone 3";
+NSString * const TACUserInterfaceIdentifierIPhone4Key       = @"iPhone 4";
+NSString * const TACUserInterfaceIdentifierIPhone5Key       = @"iPhone 5";
+NSString * const TACUserInterfaceIdentifierIPhone6Key       = @"iPhone 6";
+NSString * const TACUserInterfaceIdentifierIPhone6_PlusKey  = @"iPhone 6 Plus";
+NSString * const TACUserInterfaceIdentifierIPadKey          = @"iPad";
+NSString * const TACUserInterfaceIdentifierIPad_RetinaKey   = @"iPad Retina";
+NSString * const TACUserInterfaceIdentifierIPad_ProKey      = @"iPad Pro";
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-variable"
 static CGFloat const kWidth_3_5         =  320.0;
@@ -50,6 +65,20 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
             return TACUserInterfaceIdiomPad;
     }
     return TACUserInterfaceIdiomUnspecified;
+}
+
++ (NSString *)idiomString {
+    TACUserInterfaceIdiom idiom = [self idiom];
+    switch (idiom) {
+        case TACUserInterfaceIdiomUnspecified:
+            return TACUserInterfaceIdiomUnspecifiedKey;
+        case TACUserInterfaceIdiomPhone:
+            return TACUserInterfaceIdiomPhoneKey;
+        case TACUserInterfaceIdiomPhablet:
+            return TACUserInterfaceIdiomPhabletKey;
+        case TACUserInterfaceIdiomPad:
+            return TACUserInterfaceIdiomPadKey;
+    }
 }
 
 + (BOOL)isPhone {
@@ -101,6 +130,30 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
         }
     }
     return TACUserInterfaceIdentifierUnspecified;
+}
+
++ (NSString *)identifierString {
+    TACUserInterfaceIdentifier identifier = [self identifier];
+    switch (identifier) {
+        case TACUserInterfaceIdentifierUnspecified:
+            return TACUserInterfaceIdentifierUnspecifiedKey;
+        case TACUserInterfaceIdentifierIPhone3:
+            return TACUserInterfaceIdentifierIPhone3Key;
+        case TACUserInterfaceIdentifierIPhone4:
+            return TACUserInterfaceIdentifierIPhone4Key;
+        case TACUserInterfaceIdentifierIPhone5:
+            return TACUserInterfaceIdentifierIPhone5Key;
+        case TACUserInterfaceIdentifierIPhone6:
+            return TACUserInterfaceIdentifierIPhone6Key;
+        case TACUserInterfaceIdentifierIPhone6_Plus:
+            return TACUserInterfaceIdentifierIPhone6_PlusKey;
+        case TACUserInterfaceIdentifierIPad:
+            return TACUserInterfaceIdentifierIPadKey;
+        case TACUserInterfaceIdentifierIPad_Retina:
+            return TACUserInterfaceIdentifierIPad_RetinaKey;
+        case TACUserInterfaceIdentifierIPad_Pro:
+            return TACUserInterfaceIdentifierIPad_ProKey;
+    }
 }
 
 + (BOOL)isUnspecified {

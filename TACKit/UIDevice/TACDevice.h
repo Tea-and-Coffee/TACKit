@@ -30,12 +30,29 @@ typedef NS_ENUM(NSInteger, TACUserInterfaceIdentifier) {
     TACUserInterfaceIdentifierIPad_Pro
 };
 
+UIKIT_EXTERN NSString * const TACUserInterfaceIdiomUnspecifiedKey;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdiomPhoneKey;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdiomPhabletKey;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdiomPadKey;
+
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierUnspecifiedKey;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierIPhone3Key;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierIPhone4Key;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierIPhone5Key;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierIPhone6Key;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierIPhone6_PlusKey;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierIPadKey;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierIPad_RetinaKey;
+UIKIT_EXTERN NSString * const TACUserInterfaceIdentifierIPad_ProKey;
+
 + (TACUserInterfaceIdiom)idiom;
++ (NSString *)idiomString;
 + (BOOL)isPhone;
 + (BOOL)isPhablet;
 + (BOOL)isPad;
 
 + (TACUserInterfaceIdentifier)identifier;
++ (NSString *)identifierString;
 + (BOOL)isUnspecified;
 + (BOOL)isIPhone3;
 + (BOOL)isIPhone4;

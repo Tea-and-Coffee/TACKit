@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSInteger, HTTPStatusCode) {
     // nil
     Zero = 0,
@@ -84,6 +86,8 @@ typedef NS_ENUM(NSInteger, HTTPStatusCode) {
 
 @interface UIAlertView (HTTPStatus)
 
-- (instancetype)initWithHttpStatusCode:(NSInteger)statusCode delegate:(id)aDelegate;
+- (instancetype)initWithHttpStatusCode:(HTTPStatusCode)statusCode delegate:(nullable id /*<UIAlertViewDelegate>*/)delegate;
 
 @end
+
+NS_ASSUME_NONNULL_END

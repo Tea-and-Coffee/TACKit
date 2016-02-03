@@ -14,33 +14,33 @@
 @implementation UIAlertView (Error)
 #pragma clang diagnostic pop
 
-- (instancetype)initWithError:(NSError *)error delegate:(id)aDelegate {
+- (instancetype)initWithError:(NSError *)error delegate:(nullable id /*<UIAlertViewDelegate>*/)delegate {
     ALog(@"NSError: %@", error);
-    NSString *title;
-    NSString *message;
     
-    if (error.localizedFailureReason.length) {
-        title = error.localizedDescription;
-        message = error.localizedFailureReason;
-    } else {
-        title = error.localizedDescription;
+    // title
+    NSString *title = error.localizedDescription;
+    
+    // message
+    NSMutableArray<NSString *> *messages = [NSMutableArray array];
+    if (error.localizedFailureReason) {
+        [messages addObject:error.localizedFailureReason];
     }
+    if (error.localizedRecoverySuggestion) {
+        [messages addObject:error.localizedRecoverySuggestion];
+    }
+    NSString *message = messages.count ? [messages componentsJoinedByString:@"\n"] : nil;
     
-    id alert = [self initWithTitle:title
-                           message:message
-                          delegate:aDelegate
-                 cancelButtonTitle:nil
-                 otherButtonTitles:@"OK", nil];
-    return alert;
+    // otherButtonTitles
+    NSArray<NSString *> *options = error.localizedRecoveryOptions;
+    NSString *aOption = options.count ? options[0] : @"OK";
+    
+    self = [self initWithTitle:title message:message delegate:delegate cancelButtonTitle:nil otherButtonTitles:aOption, nil];
+    return self;
 }
 
-- (instancetype)initWithException:(NSException *)exception delegate:(id)aDelegate {
-    id alert = [self initWithTitle:exception.name
-                           message:exception.reason
-                          delegate:aDelegate
-                 cancelButtonTitle:nil
-                 otherButtonTitles:@"Dissmiss", nil];
-    return alert;
+- (instancetype)initWithException:(NSException *)exception delegate:(nullable id /*<UIAlertViewDelegate>*/)delegate {
+    self = [self initWithTitle:exception.name message:exception.reason delegate:delegate cancelButtonTitle:nil otherButtonTitles:@"Dissmiss", nil];
+    return self;
 }
 
 @end

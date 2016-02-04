@@ -16,9 +16,34 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ax4-lo-iH1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" id="rnr-af-GcB">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rnr-af-GcB" id="aOc-jX-h0A">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ax4-lo-iH1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7hW-Tv-tKZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ax4-lo-iH1" secondAttribute="trailing" id="KTa-Kh-GBF"/>
+                            <constraint firstItem="ax4-lo-iH1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="crT-Rd-fOd"/>
+                            <constraint firstItem="ax4-lo-iH1" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="yxV-Cn-JZd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FQe-U6-ipz"/>
+                    <connections>
+                        <outlet property="tableView" destination="ax4-lo-iH1" id="diP-p7-G40"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

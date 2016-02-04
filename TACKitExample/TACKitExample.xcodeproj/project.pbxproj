@@ -14,6 +14,9 @@
 		260C75011C58B71E007BB06A /* TACDottedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C75001C58B71E007BB06A /* TACDottedLineView.m */; };
 		260C75041C58B7C6007BB06A /* TACLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C75031C58B7C6007BB06A /* TACLineView.m */; };
 		264BA7521C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7511C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m */; };
+		264BA7B21C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7B11C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m */; };
+		264BA7B41C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264BA7B31C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard */; };
+		264BA7B71C6323E200CABDE4 /* ExampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7B61C6323E200CABDE4 /* ExampleModel.m */; };
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeUtilities.m */; };
@@ -82,6 +85,11 @@
 		260C75031C58B7C6007BB06A /* TACLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACLineView.m; sourceTree = "<group>"; };
 		264BA7501C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLCredentialStorage+Authentication.h"; sourceTree = "<group>"; };
 		264BA7511C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCredentialStorage+Authentication.m"; sourceTree = "<group>"; };
+		264BA7B01C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPBasicAuthenticationViewController.h; sourceTree = "<group>"; };
+		264BA7B11C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPBasicAuthenticationViewController.m; sourceTree = "<group>"; };
+		264BA7B31C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HTTPBasicAuthenticationViewController.storyboard; sourceTree = "<group>"; };
+		264BA7B51C6323E200CABDE4 /* ExampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleModel.h; sourceTree = "<group>"; };
+		264BA7B61C6323E200CABDE4 /* ExampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleModel.m; sourceTree = "<group>"; };
 		DC0B2D831BF9CB880005FD7B /* NSObject+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Debug.h"; sourceTree = "<group>"; };
 		DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Debug.m"; sourceTree = "<group>"; };
 		DC5EA44D1C083E1A0098BE60 /* UIStoryboard+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewController.h"; sourceTree = "<group>"; };
@@ -223,6 +231,32 @@
 				264BA7511C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m */,
 			);
 			path = NSURLCredentialStorage;
+			sourceTree = "<group>";
+		};
+		264BA7A71C631A2800CABDE4 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				264BA7A81C631A2800CABDE4 /* NSURLCredentialStorage */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		264BA7A81C631A2800CABDE4 /* NSURLCredentialStorage */ = {
+			isa = PBXGroup;
+			children = (
+				264BA7A91C631A2800CABDE4 /* NSURLCredentialStorage+Authentication */,
+			);
+			path = NSURLCredentialStorage;
+			sourceTree = "<group>";
+		};
+		264BA7A91C631A2800CABDE4 /* NSURLCredentialStorage+Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				264BA7B01C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.h */,
+				264BA7B11C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m */,
+				264BA7B31C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard */,
+			);
+			path = "NSURLCredentialStorage+Authentication";
 			sourceTree = "<group>";
 		};
 		DC5EA44C1C083D440098BE60 /* UIStoryboard */ = {
@@ -501,8 +535,11 @@
 				F49EC1691B5779B300820ED2 /* ViewController.h */,
 				F49EC16A1B5779B300820ED2 /* ViewController.m */,
 				F49EC16C1B5779B300820ED2 /* Main.storyboard */,
+				264BA7B51C6323E200CABDE4 /* ExampleModel.h */,
+				264BA7B61C6323E200CABDE4 /* ExampleModel.m */,
 				F49EC16F1B5779B300820ED2 /* Images.xcassets */,
 				F49EC1711B5779B300820ED2 /* LaunchScreen.xib */,
+				264BA7A71C631A2800CABDE4 /* Example */,
 				F49EC1621B5779B300820ED2 /* Supporting Files */,
 			);
 			path = TACKitExample;
@@ -625,6 +662,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264BA7B41C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard in Resources */,
 				F49EC16E1B5779B300820ED2 /* Main.storyboard in Resources */,
 				F49EC1731B5779B300820ED2 /* LaunchScreen.xib in Resources */,
 				F49EC1701B5779B300820ED2 /* Images.xcassets in Resources */,
@@ -653,6 +691,7 @@
 				F43C3E251B577BC9008DCA99 /* UIView+Style.m in Sources */,
 				FBD5B74A1C1C9EB500248753 /* TACDevice.m in Sources */,
 				F43C3E261B577BC9008DCA99 /* TACViewController.m in Sources */,
+				264BA7B71C6323E200CABDE4 /* ExampleModel.m in Sources */,
 				F43C3E1E1B577BC9008DCA99 /* TACTableViewCellStyleValue1.m in Sources */,
 				260C75041C58B7C6007BB06A /* TACLineView.m in Sources */,
 				F43C3E151B577BC9008DCA99 /* UIAlertView+HTTPStatus.m in Sources */,
@@ -660,6 +699,7 @@
 				F43C3E121B577BC9008DCA99 /* TACURL.m in Sources */,
 				260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */,
 				F43C3E0E1B577BC9008DCA99 /* NSObject+Common.m in Sources */,
+				264BA7B21C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m in Sources */,
 				F43C3E171B577BC9008DCA99 /* UIImage+Trimming.m in Sources */,
 				F43C3E191B577BC9008DCA99 /* TACVerticalTwoTitleView.m in Sources */,
 				F43C3E1C1B577BC9008DCA99 /* TACTableViewCell.m in Sources */,

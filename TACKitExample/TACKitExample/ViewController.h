@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "TACViewController.h"
+#import "ExampleModel.h"
 
 @interface ViewController : TACViewController
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray<ExampleModel *> *examples;
 
 @end

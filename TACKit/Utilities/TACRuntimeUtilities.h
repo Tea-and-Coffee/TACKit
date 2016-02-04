@@ -20,6 +20,6 @@ OBJC_EXPORT const char *property_getType(objc_property_t property);
 /**
  * [How To Use]
  *
- * swizzleImplementations:selector:class:selector
- * TACRuntimeUtilitiesTestsに記述した。
+ * [TACRuntimeUtilities swizzleImplementations:selector:class:selector]
+ *     TACRuntimeUtilitiesTestsに記述
  */

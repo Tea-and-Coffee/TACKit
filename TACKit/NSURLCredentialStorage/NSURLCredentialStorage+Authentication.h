@@ -22,5 +22,7 @@ NS_ASSUME_NONNULL_END
 /**
  * [How To Use]
  *
- * http://iphone-dev.g.hatena.ne.jp/laiso/20120301/1330611905
+ * [NSURLCredentialStorage setHTTPBasicAuthenticationWithUser:password:host:port:protocol:realm:]
+ *     01.http://iphone-dev.g.hatena.ne.jp/laiso/20120301/1330611905
+ *     02.HTTPBasicAuthenticationViewControllerに記述
  */

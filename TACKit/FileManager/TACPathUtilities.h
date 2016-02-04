@@ -40,18 +40,18 @@ BOOL addSkipBackupAttributeWithItemURL(NSURL *URL);
 /**
  * [How To Use]
  *
- * TACSearchPathForDirectoryInDomains
- * NSString *path = TACSearchPathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+ * TACSearchPathForDirectoryInDomains()
+ *     NSString *path = TACSearchPathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
  *
- * TACCreatePathForDirectoryInDomains
- * NSString *path = TACCreatePathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+ * TACCreatePathForDirectoryInDomains()
+ *     NSString *path = TACCreatePathForDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
  *
- * TACCreatePathForTACDirectoryInDomains
- * NSString *path = TACCreatePathForTACDirectoryInDomains(TACImagesDirectory, NSUserDomainMask, YES);
+ * TACCreatePathForTACDirectoryInDomains()
+ *     NSString *path = TACCreatePathForTACDirectoryInDomains(TACImagesDirectory, NSUserDomainMask, YES);
  *
- * TACRemoveDirectoryInDomains
- * BOOL result = TACRemoveDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+ * TACRemoveDirectoryInDomains()
+ *     BOOL result = TACRemoveDirectoryInDomains(NSCachesDirectory, NSUserDomainMask, YES);
  *
- * TACRemoveTACDirectoryInDomains
- * BOOL result = TACRemoveTACDirectoryInDomains(TACImagesDirectory, NSUserDomainMask, YES);
+ * TACRemoveTACDirectoryInDomains()
+ *     BOOL result = TACRemoveTACDirectoryInDomains(TACImagesDirectory, NSUserDomainMask, YES);
  */

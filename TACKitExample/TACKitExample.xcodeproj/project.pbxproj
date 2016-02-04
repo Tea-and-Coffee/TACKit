@@ -13,6 +13,7 @@
 		260C74FE1C58AE01007BB06A /* TACCrystalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74FD1C58AE01007BB06A /* TACCrystalButton.m */; };
 		260C75011C58B71E007BB06A /* TACDottedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C75001C58B71E007BB06A /* TACDottedLineView.m */; };
 		260C75041C58B7C6007BB06A /* TACLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C75031C58B7C6007BB06A /* TACLineView.m */; };
+		264BA7521C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7511C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m */; };
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeUtilities.m */; };
@@ -79,6 +80,8 @@
 		260C75001C58B71E007BB06A /* TACDottedLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACDottedLineView.m; sourceTree = "<group>"; };
 		260C75021C58B7C6007BB06A /* TACLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACLineView.h; sourceTree = "<group>"; };
 		260C75031C58B7C6007BB06A /* TACLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACLineView.m; sourceTree = "<group>"; };
+		264BA7501C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLCredentialStorage+Authentication.h"; sourceTree = "<group>"; };
+		264BA7511C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCredentialStorage+Authentication.m"; sourceTree = "<group>"; };
 		DC0B2D831BF9CB880005FD7B /* NSObject+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Debug.h"; sourceTree = "<group>"; };
 		DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Debug.m"; sourceTree = "<group>"; };
 		DC5EA44D1C083E1A0098BE60 /* UIStoryboard+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewController.h"; sourceTree = "<group>"; };
@@ -213,6 +216,15 @@
 			path = UIButton;
 			sourceTree = "<group>";
 		};
+		264BA7491C62DCD600CABDE4 /* NSURLCredentialStorage */ = {
+			isa = PBXGroup;
+			children = (
+				264BA7501C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.h */,
+				264BA7511C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m */,
+			);
+			path = NSURLCredentialStorage;
+			sourceTree = "<group>";
+		};
 		DC5EA44C1C083D440098BE60 /* UIStoryboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +280,7 @@
 				260C74ED1C589C96007BB06A /* NSNumbar */,
 				F43C3DC51B577BC9008DCA99 /* NSObject */,
 				F43C3DCE1B577BC9008DCA99 /* NSURL */,
+				264BA7491C62DCD600CABDE4 /* NSURLCredentialStorage */,
 				F43C3DDA1B577BC9008DCA99 /* UIAlertView */,
 				260C74FB1C58ADE0007BB06A /* UIButton */,
 				FBD5B7471C1C9EB500248753 /* UIDevice */,
@@ -664,6 +677,7 @@
 				F43C3E1F1B577BC9008DCA99 /* TACTableViewCellStyleValue2.m in Sources */,
 				260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */,
 				DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */,
+				264BA7521C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m in Sources */,
 				F43C3E0C1B577BC9008DCA99 /* TACAppleMaps.m in Sources */,
 				260C75011C58B71E007BB06A /* TACDottedLineView.m in Sources */,
 				F43C3E0A1B577BC9008DCA99 /* TACPathUtilities.m in Sources */,

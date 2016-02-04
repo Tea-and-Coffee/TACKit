@@ -27,6 +27,7 @@
 #import "TACCompare.h"
 #import "TACTransform.h"
 #import "TACURL.h"
+#import "NSURLCredentialStorage+Authentication.h"
 #import "UIAlertView+Error.h"
 #import "UIAlertView+HTTPStatus.h"
 #import "TACCrystalButton.h"

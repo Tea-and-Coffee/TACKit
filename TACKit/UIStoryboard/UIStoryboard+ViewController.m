@@ -10,14 +10,14 @@
 
 @implementation UIStoryboard (ViewController)
 
-+ (nonnull __kindof UIViewController *)instantiateInitialViewControllerWithStoryboard:(nonnull NSString *)storyboardName bundle:(nullable NSBundle *)storyboardBundleOrNil {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:storyboardBundleOrNil];
++ (nonnull __kindof UIViewController *)instantiateInitialViewControllerWithStoryboard:(nonnull NSString *)storyboardName {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     UIViewController *vc = [storyboard instantiateInitialViewController];
     return vc;
 }
 
-+ (nonnull __kindof UIViewController *)instantiateViewControllerWithStoryboard:(nonnull NSString *)storyboardName bundle:(nullable NSBundle *)storyboardBundleOrNil vcIdentifier:(nonnull NSString *)vcIdentifier {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:storyboardBundleOrNil];
++ (nonnull __kindof UIViewController *)instantiateViewControllerWithStoryboard:(nonnull NSString *)storyboardName vcIdentifier:(nonnull NSString *)vcIdentifier {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:vcIdentifier];
     return vc;
 }

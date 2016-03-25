@@ -2,8 +2,8 @@
 //  HTTPBasicAuthenticationViewController.m
 //  TACKitExample
 //
-//  Created by Arai on 2016/02/04.
-//  Copyright © 2016年 masato_arai. All rights reserved.
+//  Created by masato_arai on 2016/02/04.
+//  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
 #import "HTTPBasicAuthenticationViewController.h"

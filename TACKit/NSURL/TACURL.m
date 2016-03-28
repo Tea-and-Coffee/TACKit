@@ -15,25 +15,26 @@
     // Ex:
     // NSURL *url = [NSURL URLWithString:@"http://user:password@www.example.com:8080/hoge/fuga/index.html?a=1&b=2#test"];
     
-    DLog(@"absoluteString: %@", [url absoluteString]);
-    DLog(@"absoluteURL: %@", [url absoluteURL]);
-    DLog(@"baseURL: %@", [url baseURL]);
-    DLog(@"fragment: %@", [url fragment]);
-    DLog(@"host: %@", [url host]);
-    DLog(@"lastPathComponent: %@", [url lastPathComponent]);
-    DLog(@"parameterString: %@", [url parameterString]);
-    DLog(@"password: %@", [url password]);
-    DLog(@"path: %@", [url path]);
-    DLog(@"pathComponents: %@", [url pathComponents]);
-    DLog(@"pathExtension: %@", [url pathExtension]);
-    DLog(@"port: %@", [url port]);
-    DLog(@"query: %@", [url query]);
-    DLog(@"relativePath: %@", [url relativePath]);
-    DLog(@"relativeString: %@", [url relativeString]);
-    DLog(@"resourceSpecifier: %@", [url resourceSpecifier]);
-    DLog(@"scheme: %@", [url scheme]);
-    DLog(@"standardizedURL: %@", [url standardizedURL]);
-    DLog(@"user: %@", [url user]);
+    DLog(@"dataRepresentation: %@", url.dataRepresentation);
+    DLog(@"absoluteString: %@", url.absoluteString);
+    DLog(@"absoluteURL: %@", url.absoluteURL);
+    DLog(@"baseURL: %@", url.baseURL);
+    DLog(@"fragment: %@", url.fragment);
+    DLog(@"host: %@", url.host);
+    DLog(@"lastPathComponent: %@", url.lastPathComponent);
+    DLog(@"parameterString: %@", url.parameterString);
+    DLog(@"password: %@", url.password);
+    DLog(@"path: %@", url.path);
+    DLog(@"pathComponents: %@", url.pathComponents);
+    DLog(@"pathExtension: %@", url.pathExtension);
+    DLog(@"port: %@", url.port);
+    DLog(@"query: %@", url.query);
+    DLog(@"relativePath: %@", url.relativePath);
+    DLog(@"relativeString: %@", url.relativeString);
+    DLog(@"resourceSpecifier: %@", url.resourceSpecifier);
+    DLog(@"scheme: %@", url.scheme);
+    DLog(@"standardizedURL: %@", url.standardizedURL);
+    DLog(@"user: %@", url.user);
 }
 
 /** [NSURL query]文字列をNSDictionaryに変換する */

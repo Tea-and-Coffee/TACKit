@@ -34,6 +34,7 @@
 #import "TACDevice.h"
 #import "UIImage+CommonImage.h"
 #import "UIImage+Trimming.h"
+#import "UIImage+View.h"
 #import "TACNavigationController.h"
 #import "TACVerticalTwoTitleView.h"
 #import "TACScreenUtilities.h"

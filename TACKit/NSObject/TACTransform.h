@@ -17,9 +17,6 @@
 
 + (void)changeAllValuesByString:(NSMutableDictionary *)targetDictionary;
 
-+ (UIImage *)imageFromView:(UIView *)view;
-
 + (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtSubview:(UIView *)subview;
-
 
 @end

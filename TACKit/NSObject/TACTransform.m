@@ -101,32 +101,6 @@ static NSString * const httpScheme = @"https";
 }
 
 #pragma mark
-#pragma mark Return value is UIImage Methods.
-
-/** UIViewをUIImageに変換する */
-+ (UIImage *)imageFromView:(UIView *)view {
-    // UIView サイズの画像コンテキストを確保
-    UIGraphicsBeginImageContextWithOptions(view.frame.size, YES, 0);
-    
-    // 開始した画像コンテキストを取得
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    // 画像化する部分の位置調整
-    CGContextTranslateCTM(context, -view.frame.origin.x, -view.frame.origin.y);
-    
-    // 画像出力
-    [view.layer renderInContext:context];
-    
-    // UIImage化
-    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
-    
-    // コンテキスト破棄
-    UIGraphicsEndImageContext();
-    
-    return image;
-}
-
-#pragma mark
 #pragma mark Return value is UITableViewCell Methods.
 
 /** 子要素のUIViewから、親のUITableViewCellを返す */

@@ -18,6 +18,7 @@
 		264BA7B41C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264BA7B31C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard */; };
 		264BA7B71C6323E200CABDE4 /* ExampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7B61C6323E200CABDE4 /* ExampleModel.m */; };
 		26F321521CA91A670053D4FE /* NSURL+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F321511CA91A670053D4FE /* NSURL+Debug.m */; };
+		26F321551CA91D770053D4FE /* UIImage+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F321541CA91D770053D4FE /* UIImage+View.m */; };
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeUtilities.m */; };
@@ -92,6 +93,8 @@
 		264BA7B61C6323E200CABDE4 /* ExampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleModel.m; sourceTree = "<group>"; };
 		26F321501CA91A670053D4FE /* NSURL+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Debug.h"; sourceTree = "<group>"; };
 		26F321511CA91A670053D4FE /* NSURL+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Debug.m"; sourceTree = "<group>"; };
+		26F321531CA91D770053D4FE /* UIImage+View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+View.h"; sourceTree = "<group>"; };
+		26F321541CA91D770053D4FE /* UIImage+View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+View.m"; sourceTree = "<group>"; };
 		DC0B2D831BF9CB880005FD7B /* NSObject+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Debug.h"; sourceTree = "<group>"; };
 		DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Debug.m"; sourceTree = "<group>"; };
 		DC5EA44D1C083E1A0098BE60 /* UIStoryboard+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewController.h"; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 				F43C3DE11B577BC9008DCA99 /* UIImage+CommonImage.m */,
 				F43C3DE21B577BC9008DCA99 /* UIImage+Trimming.h */,
 				F43C3DE31B577BC9008DCA99 /* UIImage+Trimming.m */,
+				26F321531CA91D770053D4FE /* UIImage+View.h */,
+				26F321541CA91D770053D4FE /* UIImage+View.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -701,6 +706,7 @@
 				264BA7B21C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m in Sources */,
 				F43C3E171B577BC9008DCA99 /* UIImage+Trimming.m in Sources */,
 				F43C3E191B577BC9008DCA99 /* TACVerticalTwoTitleView.m in Sources */,
+				26F321551CA91D770053D4FE /* UIImage+View.m in Sources */,
 				F43C3E1C1B577BC9008DCA99 /* TACTableViewCell.m in Sources */,
 				F49EC16B1B5779B300820ED2 /* ViewController.m in Sources */,
 				DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */,

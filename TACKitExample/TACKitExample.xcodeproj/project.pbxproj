@@ -17,6 +17,7 @@
 		264BA7B21C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7B11C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m */; };
 		264BA7B41C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264BA7B31C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard */; };
 		264BA7B71C6323E200CABDE4 /* ExampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7B61C6323E200CABDE4 /* ExampleModel.m */; };
+		26F321521CA91A670053D4FE /* NSURL+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F321511CA91A670053D4FE /* NSURL+Debug.m */; };
 		DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */; };
 		DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA44E1C083E1A0098BE60 /* UIStoryboard+ViewController.m */; };
 		DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5EA45B1C0864750098BE60 /* TACRuntimeUtilities.m */; };
@@ -28,7 +29,6 @@
 		F43C3E0E1B577BC9008DCA99 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DC71B577BC9008DCA99 /* NSObject+Common.m */; };
 		F43C3E0F1B577BC9008DCA99 /* TACCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DC91B577BC9008DCA99 /* TACCompare.m */; };
 		F43C3E111B577BC9008DCA99 /* TACTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DCD1B577BC9008DCA99 /* TACTransform.m */; };
-		F43C3E121B577BC9008DCA99 /* TACURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DD01B577BC9008DCA99 /* TACURL.m */; };
 		F43C3E131B577BC9008DCA99 /* TACDebugMode.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DD41B577BC9008DCA99 /* TACDebugMode.m */; };
 		F43C3E141B577BC9008DCA99 /* UIAlertView+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DDC1B577BC9008DCA99 /* UIAlertView+Error.m */; };
 		F43C3E151B577BC9008DCA99 /* UIAlertView+HTTPStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DDE1B577BC9008DCA99 /* UIAlertView+HTTPStatus.m */; };
@@ -90,6 +90,8 @@
 		264BA7B31C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HTTPBasicAuthenticationViewController.storyboard; sourceTree = "<group>"; };
 		264BA7B51C6323E200CABDE4 /* ExampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleModel.h; sourceTree = "<group>"; };
 		264BA7B61C6323E200CABDE4 /* ExampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleModel.m; sourceTree = "<group>"; };
+		26F321501CA91A670053D4FE /* NSURL+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Debug.h"; sourceTree = "<group>"; };
+		26F321511CA91A670053D4FE /* NSURL+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Debug.m"; sourceTree = "<group>"; };
 		DC0B2D831BF9CB880005FD7B /* NSObject+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Debug.h"; sourceTree = "<group>"; };
 		DC0B2D841BF9CB880005FD7B /* NSObject+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Debug.m"; sourceTree = "<group>"; };
 		DC5EA44D1C083E1A0098BE60 /* UIStoryboard+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewController.h"; sourceTree = "<group>"; };
@@ -111,8 +113,6 @@
 		F43C3DC91B577BC9008DCA99 /* TACCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACCompare.m; sourceTree = "<group>"; };
 		F43C3DCC1B577BC9008DCA99 /* TACTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACTransform.h; sourceTree = "<group>"; };
 		F43C3DCD1B577BC9008DCA99 /* TACTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACTransform.m; sourceTree = "<group>"; };
-		F43C3DCF1B577BC9008DCA99 /* TACURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACURL.h; sourceTree = "<group>"; };
-		F43C3DD01B577BC9008DCA99 /* TACURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACURL.m; sourceTree = "<group>"; };
 		F43C3DD11B577BC9008DCA99 /* TACColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACColor.h; sourceTree = "<group>"; };
 		F43C3DD21B577BC9008DCA99 /* TACDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACDebugLog.h; sourceTree = "<group>"; };
 		F43C3DD31B577BC9008DCA99 /* TACDebugMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACDebugMode.h; sourceTree = "<group>"; };
@@ -388,8 +388,8 @@
 		F43C3DCE1B577BC9008DCA99 /* NSURL */ = {
 			isa = PBXGroup;
 			children = (
-				F43C3DCF1B577BC9008DCA99 /* TACURL.h */,
-				F43C3DD01B577BC9008DCA99 /* TACURL.m */,
+				26F321501CA91A670053D4FE /* NSURL+Debug.h */,
+				26F321511CA91A670053D4FE /* NSURL+Debug.m */,
 			);
 			path = NSURL;
 			sourceTree = "<group>";
@@ -696,7 +696,6 @@
 				260C75041C58B7C6007BB06A /* TACLineView.m in Sources */,
 				F43C3E151B577BC9008DCA99 /* UIAlertView+HTTPStatus.m in Sources */,
 				F43C3E141B577BC9008DCA99 /* UIAlertView+Error.m in Sources */,
-				F43C3E121B577BC9008DCA99 /* TACURL.m in Sources */,
 				260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */,
 				F43C3E0E1B577BC9008DCA99 /* NSObject+Common.m in Sources */,
 				264BA7B21C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m in Sources */,
@@ -707,6 +706,7 @@
 				DC0B2D851BF9CB880005FD7B /* NSObject+Debug.m in Sources */,
 				F43C3E161B577BC9008DCA99 /* UIImage+CommonImage.m in Sources */,
 				F43C3E1A1B577BC9008DCA99 /* TACScreenUtilities.m in Sources */,
+				26F321521CA91A670053D4FE /* NSURL+Debug.m in Sources */,
 				260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */,
 				F43C3E131B577BC9008DCA99 /* TACDebugMode.m in Sources */,
 				F49EC18B1B578EC800820ED2 /* TACPlaceHolderTextView.m in Sources */,

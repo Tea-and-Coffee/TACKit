@@ -26,7 +26,7 @@
 #import "NSObject+Debug.h"
 #import "TACCompare.h"
 #import "TACTransform.h"
-#import "TACURL.h"
+#import "NSURL+Debug.h"
 #import "NSURLCredentialStorage+Authentication.h"
 #import "UIAlertView+Error.h"
 #import "UIAlertView+HTTPStatus.h"

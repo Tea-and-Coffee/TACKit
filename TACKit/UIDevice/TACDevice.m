@@ -11,20 +11,20 @@
 
 @implementation TACDevice
 
-NSString * const TACUserInterfaceIdiomUnspecifiedKey        = @"Unspecified";
-NSString * const TACUserInterfaceIdiomPhoneKey              = @"Phone";
-NSString * const TACUserInterfaceIdiomPhabletKey            = @"Phablet";
-NSString * const TACUserInterfaceIdiomPadKey                = @"Pad";
+NSString * const TACUserInterfaceIdiomUnspecifiedKey            = @"Unspecified";
+NSString * const TACUserInterfaceIdiomPhoneKey                  = @"Phone";
+NSString * const TACUserInterfaceIdiomPhabletKey                = @"Phablet";
+NSString * const TACUserInterfaceIdiomPadKey                    = @"Pad";
 
-NSString * const TACUserInterfaceIdentifierUnspecifiedKey   = @"Unspecified";
-NSString * const TACUserInterfaceIdentifierIPhone3Key       = @"iPhone 3";
-NSString * const TACUserInterfaceIdentifierIPhone4Key       = @"iPhone 4";
-NSString * const TACUserInterfaceIdentifierIPhone5Key       = @"iPhone 5";
-NSString * const TACUserInterfaceIdentifierIPhone6Key       = @"iPhone 6";
-NSString * const TACUserInterfaceIdentifierIPhone6_PlusKey  = @"iPhone 6 Plus";
-NSString * const TACUserInterfaceIdentifierIPadKey          = @"iPad";
-NSString * const TACUserInterfaceIdentifierIPad_RetinaKey   = @"iPad Retina";
-NSString * const TACUserInterfaceIdentifierIPad_ProKey      = @"iPad Pro";
+NSString * const TACUserInterfaceIdentifierUnspecifiedKey       = @"Unspecified";
+NSString * const TACUserInterfaceIdentifierIPhone3Key           = @"iPhone 3";
+NSString * const TACUserInterfaceIdentifierIPhone4Key           = @"iPhone 4";
+NSString * const TACUserInterfaceIdentifierIPhone5Key           = @"iPhone 5";
+NSString * const TACUserInterfaceIdentifierIPhone6Key           = @"iPhone 6";
+NSString * const TACUserInterfaceIdentifierIPhone6_PlusKey      = @"iPhone 6 Plus";
+NSString * const TACUserInterfaceIdentifierIPadKey              = @"iPad";
+NSString * const TACUserInterfaceIdentifierIPad_RetinaKey       = @"iPad Retina";
+NSString * const TACUserInterfaceIdentifierIPad_Retina_12_9Key  = @"iPad Retina 12.9";
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-variable"
@@ -33,7 +33,7 @@ static CGFloat const kWidth_4_0         =  320.0;
 static CGFloat const kWidth_4_7         =  375.0;
 static CGFloat const kWidth_5_5         =  414.0;
 static CGFloat const kWidth_IPad        =  768.0;
-static CGFloat const kWidth_IPad_Pro    = 1024.0;
+static CGFloat const kWidth_IPad_12_9   = 1024.0;
 #pragma clang diagnostic pop;
 
 static CGFloat const kHeight_3_5        =  480.0;
@@ -41,7 +41,7 @@ static CGFloat const kHeight_4_0        =  568.0;
 static CGFloat const kHeight_4_7        =  667.0;
 static CGFloat const kHeight_5_5        =  736.0;
 static CGFloat const kHeight_IPad       = 1024.0;
-static CGFloat const kHeight_IPad_Pro   = 1366.0;
+static CGFloat const kHeight_IPad_12_9  = 1366.0;
 
 
 #pragma mark
@@ -61,7 +61,7 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
             return TACUserInterfaceIdiomPhablet;
         case TACUserInterfaceIdentifierIPad:
         case TACUserInterfaceIdentifierIPad_Retina:
-        case TACUserInterfaceIdentifierIPad_Pro:
+        case TACUserInterfaceIdentifierIPad_Retina_12_9:
             return TACUserInterfaceIdiomPad;
     }
     return TACUserInterfaceIdiomUnspecified;
@@ -124,8 +124,8 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
         } else if ([[UIScreen mainScreen] nativeScale] == 2.0) {
             if ([TACScreenUtilities boundsSize].height == kHeight_IPad) {
                 return TACUserInterfaceIdentifierIPad_Retina;
-            } else if ([TACScreenUtilities boundsSize].height == kHeight_IPad_Pro) {
-                return TACUserInterfaceIdentifierIPad_Pro;
+            } else if ([TACScreenUtilities boundsSize].height == kHeight_IPad_12_9) {
+                return TACUserInterfaceIdentifierIPad_Retina_12_9;
             }
         }
     }
@@ -151,8 +151,8 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
             return TACUserInterfaceIdentifierIPadKey;
         case TACUserInterfaceIdentifierIPad_Retina:
             return TACUserInterfaceIdentifierIPad_RetinaKey;
-        case TACUserInterfaceIdentifierIPad_Pro:
-            return TACUserInterfaceIdentifierIPad_ProKey;
+        case TACUserInterfaceIdentifierIPad_Retina_12_9:
+            return TACUserInterfaceIdentifierIPad_Retina_12_9Key;
     }
 }
 
@@ -188,8 +188,8 @@ static CGFloat const kHeight_IPad_Pro   = 1366.0;
     return [self identifier] == TACUserInterfaceIdentifierIPad_Retina;
 }
 
-+ (BOOL)isIPadPro {
-    return [self identifier] == TACUserInterfaceIdentifierIPad_Pro;
++ (BOOL)isIPadRetina129 {
+    return [self identifier] == TACUserInterfaceIdentifierIPad_Retina_12_9;
 }
 
 @end

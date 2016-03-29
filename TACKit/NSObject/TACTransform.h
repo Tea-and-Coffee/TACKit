@@ -11,8 +11,6 @@
 
 @interface TACTransform : NSObject
 
-+ (NSString *)appendingHttpScheme:(NSString *)target;
-
 + (NSDate *)dateFromDate:(NSDate *)date dateStyle:(NSDateFormatterStyle)dstyle timeStyle:(NSDateFormatterStyle)tstyle;
 
 + (void)changeAllValuesByString:(NSMutableDictionary *)targetDictionary;

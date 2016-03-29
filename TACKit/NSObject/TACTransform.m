@@ -11,43 +11,6 @@
 
 @implementation TACTransform
 
-#ifdef DEBUG
-static NSString * const httpScheme = @"http";
-#else
-static NSString * const httpScheme = @"https";
-#endif
-
-#pragma mark
-#pragma mark Return value is NSString Methods.
-
-/** NSStringに、httpSchemeを付与して返す */
-+ (NSString *)appendingHttpScheme:(NSString *)target {
-    if (!target) {
-        return target;
-    }
-    if (target.length == 0) {
-        return target;
-    }
-    
-    BOOL hasPrefix_1 = [target hasPrefix:@"http://"];
-    if (hasPrefix_1) {
-        return target;
-    }
-    
-    BOOL hasPrefix_2 = [target hasPrefix:@"https://"];
-    if (hasPrefix_2) {
-        return target;
-    }
-    
-    BOOL hasPrefix_3 = [target hasPrefix:@"//"];
-    if (hasPrefix_3) {
-        NSString *editedTarget = [NSString stringWithFormat:@"%@%@%@", httpScheme, @":", target];
-        return editedTarget;
-    }
-    
-    return target;
-}
-
 #pragma mark
 #pragma mark Return value is NSDate Methods.
 

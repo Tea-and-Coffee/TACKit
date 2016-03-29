@@ -1,9 +1,9 @@
 //
 //  NSDate+Additions.m
-//  TACKitExample
+//  TACKit
 //
-//  Created by Arai on 2016/03/29.
-//  Copyright © 2016年 masato_arai. All rights reserved.
+//  Created by masato_arai on 2016/03/29.
+//  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
 #import "NSDate+Additions.h"

@@ -49,16 +49,4 @@
     }
 }
 
-#pragma mark
-#pragma mark Return value is UITableViewCell Methods.
-
-/** 子要素のUIViewから、親のUITableViewCellを返す */
-+ (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtSubview:(UIView *)subview {
-    CGPoint convertedPoint = [subview convertPoint:CGPointZero toView:tableView];
-    NSIndexPath *indexPath = [tableView indexPathForRowAtPoint:convertedPoint];
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
-    return cell;
-}
-
 @end

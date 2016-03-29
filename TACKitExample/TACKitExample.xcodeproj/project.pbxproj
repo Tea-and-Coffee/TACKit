@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2607C3291CAA31F10094ACF6 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2607C3281CAA31F10094ACF6 /* NSDate+Additions.m */; };
+		2607C32C1CAA4E840094ACF6 /* UITableView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2607C32B1CAA4E840094ACF6 /* UITableView+Additions.m */; };
 		260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */; };
 		260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F31C589D05007BB06A /* NSNull+isNull.m */; };
 		260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F91C58A2A6007BB06A /* TACBorderView.m */; };
@@ -75,6 +76,8 @@
 /* Begin PBXFileReference section */
 		2607C3271CAA31F10094ACF6 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
 		2607C3281CAA31F10094ACF6 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
+		2607C32A1CAA4E840094ACF6 /* UITableView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Additions.h"; sourceTree = "<group>"; };
+		2607C32B1CAA4E840094ACF6 /* UITableView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Additions.m"; sourceTree = "<group>"; };
 		260C74EE1C589C96007BB06A /* NSNumber+Arithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Arithmetic.h"; sourceTree = "<group>"; };
 		260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Arithmetic.m"; sourceTree = "<group>"; };
 		260C74F21C589D05007BB06A /* NSNull+isNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+isNull.h"; sourceTree = "<group>"; };
@@ -466,6 +469,8 @@
 			children = (
 				F43C3DEE1B577BC9008DCA99 /* TACTableView.h */,
 				F43C3DEF1B577BC9008DCA99 /* TACTableView.m */,
+				2607C32A1CAA4E840094ACF6 /* UITableView+Additions.h */,
+				2607C32B1CAA4E840094ACF6 /* UITableView+Additions.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -746,6 +751,7 @@
 				FBD5B7461C1C9EA200248753 /* TACSize.m in Sources */,
 				F43C3E0D1B577BC9008DCA99 /* NSData+Debug.m in Sources */,
 				F43C3E0B1B577BC9008DCA99 /* TACGoogleMaps.m in Sources */,
+				2607C32C1CAA4E840094ACF6 /* UITableView+Additions.m in Sources */,
 				F43C3E241B577BC9008DCA99 /* UIView+Debug.m in Sources */,
 				F43C3E221B577BC9008DCA99 /* TACView.m in Sources */,
 			);

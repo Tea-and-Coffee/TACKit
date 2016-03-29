@@ -41,6 +41,7 @@
 #import "TACScreenUtilities.h"
 #import "UIStoryboard+ViewController.h"
 #import "TACTableView.h"
+#import "UITableView+Additions.h"
 #import "TACTableViewCell.h"
 #import "TACTableViewCellStyleSubtitle.h"
 #import "TACTableViewCellStyleValue1.h"

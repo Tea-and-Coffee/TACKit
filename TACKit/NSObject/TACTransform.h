@@ -13,6 +13,4 @@
 
 + (void)changeAllValuesByString:(NSMutableDictionary *)targetDictionary;
 
-+ (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtSubview:(UIView *)subview;
-
 @end

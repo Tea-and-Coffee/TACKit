@@ -12,20 +12,6 @@
 @implementation TACTransform
 
 #pragma mark
-#pragma mark Return value is NSDate Methods.
-
-/** NSDateFormatterStyleを変更したNSDateを返す */
-+ (NSDate *)dateFromDate:(NSDate *)date dateStyle:(NSDateFormatterStyle)dstyle timeStyle:(NSDateFormatterStyle)tstyle {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateStyle = dstyle;
-    formatter.timeStyle = tstyle;
-    NSString *str = [formatter stringFromDate:date];
-    NSDate *styledData = [formatter dateFromString:str];
-    
-    return styledData;
-}
-
-#pragma mark
 #pragma mark NSMutableDictionary Methods.
 
 /** NSMutableDictionaryの全要素をNSStringへ変換する */

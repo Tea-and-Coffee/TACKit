@@ -11,8 +11,6 @@
 
 @interface TACTransform : NSObject
 
-+ (NSDate *)dateFromDate:(NSDate *)date dateStyle:(NSDateFormatterStyle)dstyle timeStyle:(NSDateFormatterStyle)tstyle;
-
 + (void)changeAllValuesByString:(NSMutableDictionary *)targetDictionary;
 
 + (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtSubview:(UIView *)subview;

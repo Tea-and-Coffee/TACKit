@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2607C3291CAA31F10094ACF6 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2607C3281CAA31F10094ACF6 /* NSDate+Additions.m */; };
 		260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */; };
 		260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F31C589D05007BB06A /* NSNull+isNull.m */; };
 		260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F91C58A2A6007BB06A /* TACBorderView.m */; };
@@ -72,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2607C3271CAA31F10094ACF6 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		2607C3281CAA31F10094ACF6 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
 		260C74EE1C589C96007BB06A /* NSNumber+Arithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Arithmetic.h"; sourceTree = "<group>"; };
 		260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Arithmetic.m"; sourceTree = "<group>"; };
 		260C74F21C589D05007BB06A /* NSNull+isNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+isNull.h"; sourceTree = "<group>"; };
@@ -200,6 +203,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2607C3261CAA30710094ACF6 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				2607C3271CAA31F10094ACF6 /* NSDate+Additions.h */,
+				2607C3281CAA31F10094ACF6 /* NSDate+Additions.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		260C74ED1C589C96007BB06A /* NSNumbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +325,7 @@
 				F43C3DBC1B577BC9008DCA99 /* GoogleMaps */,
 				F43C3DBF1B577BC9008DCA99 /* MapKit */,
 				F43C3DC21B577BC9008DCA99 /* NSData */,
+				2607C3261CAA30710094ACF6 /* NSDate */,
 				260C74F11C589CE7007BB06A /* NSNull */,
 				260C74ED1C589C96007BB06A /* NSNumbar */,
 				F43C3DC51B577BC9008DCA99 /* NSObject */,
@@ -702,6 +715,7 @@
 				F43C3E151B577BC9008DCA99 /* UIAlertView+HTTPStatus.m in Sources */,
 				F43C3E141B577BC9008DCA99 /* UIAlertView+Error.m in Sources */,
 				260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */,
+				2607C3291CAA31F10094ACF6 /* NSDate+Additions.m in Sources */,
 				F43C3E0E1B577BC9008DCA99 /* NSObject+Common.m in Sources */,
 				264BA7B21C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m in Sources */,
 				F43C3E171B577BC9008DCA99 /* UIImage+Trimming.m in Sources */,
@@ -813,7 +827,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -851,7 +865,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

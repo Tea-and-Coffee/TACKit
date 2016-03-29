@@ -20,6 +20,7 @@
 #import "TACGoogleMaps.h"
 #import "TACAppleMaps.h"
 #import "NSData+Debug.h"
+#import "NSDate+Additions.h"
 #import "NSNull+isNull.h"
 #import "NSNumber+Arithmetic.h"
 #import "NSObject+Common.h"

@@ -46,7 +46,6 @@
 #import "TACTableViewCellStyleSubtitle.h"
 #import "TACTableViewCellStyleValue1.h"
 #import "TACTableViewCellStyleValue2.h"
-#import "UITableViewCell+Common.h"
 #import "TACPlaceHolderTextView.h"
 #import "TACBorderView.h"
 #import "TACDottedLineView.h"

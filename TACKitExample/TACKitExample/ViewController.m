@@ -81,7 +81,7 @@
     NSInteger row = indexPath.row;
     ExampleModel *example = self.examples[row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[UITableViewCell reuseIdentifier] forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[UITableViewCell identifier] forIndexPath:indexPath];
     cell.textLabel.text = example.title;
     return cell;
 }

@@ -45,7 +45,6 @@
 		F43C3E1D1B577BC9008DCA99 /* TACTableViewCellStyleSubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DF41B577BC9008DCA99 /* TACTableViewCellStyleSubtitle.m */; };
 		F43C3E1E1B577BC9008DCA99 /* TACTableViewCellStyleValue1.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DF61B577BC9008DCA99 /* TACTableViewCellStyleValue1.m */; };
 		F43C3E1F1B577BC9008DCA99 /* TACTableViewCellStyleValue2.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DF81B577BC9008DCA99 /* TACTableViewCellStyleValue2.m */; };
-		F43C3E201B577BC9008DCA99 /* UITableViewCell+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DFA1B577BC9008DCA99 /* UITableViewCell+Common.m */; };
 		F43C3E221B577BC9008DCA99 /* TACView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3E001B577BC9008DCA99 /* TACView.m */; };
 		F43C3E231B577BC9008DCA99 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3E021B577BC9008DCA99 /* UIView+Common.m */; };
 		F43C3E241B577BC9008DCA99 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3E041B577BC9008DCA99 /* UIView+Debug.m */; };
@@ -154,8 +153,6 @@
 		F43C3DF61B577BC9008DCA99 /* TACTableViewCellStyleValue1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACTableViewCellStyleValue1.m; sourceTree = "<group>"; };
 		F43C3DF71B577BC9008DCA99 /* TACTableViewCellStyleValue2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACTableViewCellStyleValue2.h; sourceTree = "<group>"; };
 		F43C3DF81B577BC9008DCA99 /* TACTableViewCellStyleValue2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACTableViewCellStyleValue2.m; sourceTree = "<group>"; };
-		F43C3DF91B577BC9008DCA99 /* UITableViewCell+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Common.h"; sourceTree = "<group>"; };
-		F43C3DFA1B577BC9008DCA99 /* UITableViewCell+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Common.m"; sourceTree = "<group>"; };
 		F43C3DFF1B577BC9008DCA99 /* TACView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACView.h; sourceTree = "<group>"; };
 		F43C3E001B577BC9008DCA99 /* TACView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACView.m; sourceTree = "<group>"; };
 		F43C3E011B577BC9008DCA99 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
@@ -486,8 +483,6 @@
 				F43C3DF61B577BC9008DCA99 /* TACTableViewCellStyleValue1.m */,
 				F43C3DF71B577BC9008DCA99 /* TACTableViewCellStyleValue2.h */,
 				F43C3DF81B577BC9008DCA99 /* TACTableViewCellStyleValue2.m */,
-				F43C3DF91B577BC9008DCA99 /* UITableViewCell+Common.h */,
-				F43C3DFA1B577BC9008DCA99 /* UITableViewCell+Common.m */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -708,7 +703,6 @@
 			files = (
 				F43C3E111B577BC9008DCA99 /* TACTransform.m in Sources */,
 				F43C3E0F1B577BC9008DCA99 /* TACCompare.m in Sources */,
-				F43C3E201B577BC9008DCA99 /* UITableViewCell+Common.m in Sources */,
 				F43C3E231B577BC9008DCA99 /* UIView+Common.m in Sources */,
 				DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */,
 				F43C3E251B577BC9008DCA99 /* UIView+Style.m in Sources */,

@@ -14,14 +14,7 @@
 @implementation UIAlertView (HTTPStatus)
 #pragma clang diagnostic pop
 
-- (instancetype)initWithHttpStatusCode:(HTTPStatusCode)statusCode delegate:(nullable id /*<UIAlertViewDelegate>*/)delegate {
-    if (statusCode != OK) {
-        ALog(@"Http Status Code: %zd", statusCode);
-    }
-    if (statusCode >= OK && statusCode <= MultipleChoices) {
-        return nil;
-    }
-    
+- (instancetype)initWithHTTPStatusCode:(HTTPStatusCode)statusCode delegate:(nullable id /*<UIAlertViewDelegate>*/)delegate; {
     NSString *title = @"Http Status Code";
     NSString *message = @(statusCode).stringValue;
     

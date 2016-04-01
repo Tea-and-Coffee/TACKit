@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, HTTPStatusCode) {
     // nil
     Zero = 0,
     
-    // 1xx Informational 情報。
+    // 1xx Informational 情報
     // リクエストは受け取られた。処理は継続される。
     Continue = 100,                     // 継続
     SwitchingProtocols = 101,           // プロトコル切替え
@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger, HTTPStatusCode) {
     ResetContent = 205,                 // 内容のリセット
     PartialContent = 206,               // 部分的内容
     Multi_Status = 207,                 // 複数のステータス
+    AlreadyReported = 208,              // 既に報告
     IMUsed = 226,                       // IM使用
     
     // 3xx Redirection リダイレクション
@@ -55,20 +56,21 @@ typedef NS_ENUM(NSInteger, HTTPStatusCode) {
     NotAcceptable = 406,                // 受理できない
     ProxyAuthenticationRequired = 407,  // プロキシ認証が必要である
     RequestTimeout = 408,               // リクエストタイムアウト
-    Conflict = 409,                     // 矛盾
+    Conflict = 409,                     // 競合
     Gone = 410,                         // 消滅した
     LengthRequired = 411,               // 長さが必要
     PreconditionFailed = 412,           // 前提条件で失敗した
-    RequestEntityTooLarge = 413,        // リクエストエンティティが大きすぎる
-    Request_URITooLong = 414,           // リクエストURIが大きすぎる
+    PayloadTooLarge = 413,              // ペイロードが大きすぎる
+    URITooLong = 414,                   // URIが大きすぎる
     UnsupportedMediaType = 415,         // サポートしていないメディアタイプ
-    RequestedRangeNotSatisfiable = 416, // リクエストしたレンジは範囲外にある
+    RangeNotSatisfiable = 416,          // レンジは範囲外にある
     ExpectationFailed = 417,            // Expectヘッダによる拡張が失敗
-    Iamateapot = 418,                   // 私はティーポット
+    I_am_a_teapot = 418,                // 私はティーポット
     UnprocessableEntity = 422,          // 処理できないエンティティ
     Locked = 423,                       // ロックされている
     FailedDependency = 424,             // 依存関係で失敗
     UpgradeRequired = 426,              // アップグレード要求
+    UnavailableForLegalReasons = 451,   //  政治的検閲による閲覧禁止。
     
     // 5xx Server Error サーバエラー
     // サーバがリクエストの処理に失敗した。

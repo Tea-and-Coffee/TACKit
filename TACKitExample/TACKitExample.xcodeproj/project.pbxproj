@@ -15,6 +15,7 @@
 		260C74FE1C58AE01007BB06A /* TACCrystalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74FD1C58AE01007BB06A /* TACCrystalButton.m */; };
 		260C75011C58B71E007BB06A /* TACDottedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C75001C58B71E007BB06A /* TACDottedLineView.m */; };
 		260C75041C58B7C6007BB06A /* TACLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C75031C58B7C6007BB06A /* TACLineView.m */; };
+		2645F5931CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2645F5921CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.m */; };
 		264BA7521C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7511C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m */; };
 		264BA7B21C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264BA7B11C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.m */; };
 		264BA7B41C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264BA7B31C631F8100CABDE4 /* HTTPBasicAuthenticationViewController.storyboard */; };
@@ -90,6 +91,8 @@
 		260C75001C58B71E007BB06A /* TACDottedLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACDottedLineView.m; sourceTree = "<group>"; };
 		260C75021C58B7C6007BB06A /* TACLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACLineView.h; sourceTree = "<group>"; };
 		260C75031C58B7C6007BB06A /* TACLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACLineView.m; sourceTree = "<group>"; };
+		2645F5911CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookieStorage+Additions.h"; sourceTree = "<group>"; };
+		2645F5921CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPCookieStorage+Additions.m"; sourceTree = "<group>"; };
 		264BA7501C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLCredentialStorage+Authentication.h"; sourceTree = "<group>"; };
 		264BA7511C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCredentialStorage+Authentication.m"; sourceTree = "<group>"; };
 		264BA7B01C631ABB00CABDE4 /* HTTPBasicAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPBasicAuthenticationViewController.h; sourceTree = "<group>"; };
@@ -242,6 +245,15 @@
 			path = UIButton;
 			sourceTree = "<group>";
 		};
+		2645F5901CCF3FEF008ACF60 /* NSHTTPCookieStorage */ = {
+			isa = PBXGroup;
+			children = (
+				2645F5911CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.h */,
+				2645F5921CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.m */,
+			);
+			path = NSHTTPCookieStorage;
+			sourceTree = "<group>";
+		};
 		264BA7491C62DCD600CABDE4 /* NSURLCredentialStorage */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +350,7 @@
 				F43C3DBF1B577BC9008DCA99 /* MapKit */,
 				F43C3DC21B577BC9008DCA99 /* NSData */,
 				2607C3261CAA30710094ACF6 /* NSDate */,
+				2645F5901CCF3FEF008ACF60 /* NSHTTPCookieStorage */,
 				2676355C1CAE3A0F00F7A019 /* NSHTTPURLResponse */,
 				260C74F11C589CE7007BB06A /* NSNull */,
 				260C74ED1C589C96007BB06A /* NSNumbar */,
@@ -714,6 +727,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2645F5931CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.m in Sources */,
 				F43C3E111B577BC9008DCA99 /* TACTransform.m in Sources */,
 				267635621CAE3AC100F7A019 /* NSHTTPURLResponse+Additions.m in Sources */,
 				F43C3E0F1B577BC9008DCA99 /* TACCompare.m in Sources */,

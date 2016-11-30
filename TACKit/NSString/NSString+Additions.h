@@ -10,6 +10,6 @@
 
 @interface NSString (Additions)
 
-+ (BOOL)isNotLength:(NSString *)string;
++ (BOOL)hasLength:(NSString *)string;
 
 @end

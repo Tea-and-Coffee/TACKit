@@ -10,17 +10,17 @@
 
 @implementation NSString (Additions)
 
-+ (BOOL)isNotLength:(NSString *)string {
++ (BOOL)hasLength:(NSString *)string {
     if (string == nil) {
-        return YES;
+        return NO;
     }
     if (![string isKindOfClass:[NSString class]]) {
-        return YES;
+        return NO;
     }
     if (string.length == 0) {
-        return YES;
+        return NO;
     }
-    return NO;
+    return YES;
 }
 
 @end

@@ -60,6 +60,7 @@
 		F49EC1731B5779B300820ED2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49EC1711B5779B300820ED2 /* LaunchScreen.xib */; };
 		F49EC17F1B5779B300820ED2 /* TACKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */; };
 		F49EC18B1B578EC800820ED2 /* TACPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */; };
+		F52CDAC01DEEA0A20010AC36 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */; };
 		FBD5B7461C1C9EA200248753 /* TACSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7451C1C9EA200248753 /* TACSize.m */; };
 		FBD5B74A1C1C9EB500248753 /* TACDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7491C1C9EB500248753 /* TACDevice.m */; };
 /* End PBXBuildFile section */
@@ -185,6 +186,8 @@
 		F49EC1881B577CEB00820ED2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F49EC1891B578EC800820ED2 /* TACPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACPlaceHolderTextView.h; sourceTree = "<group>"; };
 		F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACPlaceHolderTextView.m; sourceTree = "<group>"; };
+		F52CDABE1DEEA0A20010AC36 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		FBD5B7441C1C9EA200248753 /* TACSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACSize.h; sourceTree = "<group>"; };
 		FBD5B7451C1C9EA200248753 /* TACSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACSize.m; sourceTree = "<group>"; };
 		FBD5B7481C1C9EB500248753 /* TACDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACDevice.h; sourceTree = "<group>"; };
@@ -355,6 +358,7 @@
 				260C74F11C589CE7007BB06A /* NSNull */,
 				260C74ED1C589C96007BB06A /* NSNumbar */,
 				F43C3DC51B577BC9008DCA99 /* NSObject */,
+				F52CDABD1DEEA0830010AC36 /* NSString */,
 				F43C3DCE1B577BC9008DCA99 /* NSURL */,
 				264BA7491C62DCD600CABDE4 /* NSURLCredentialStorage */,
 				F43C3DDA1B577BC9008DCA99 /* UIAlertView */,
@@ -617,6 +621,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F52CDABD1DEEA0830010AC36 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				F52CDABE1DEEA0A20010AC36 /* NSString+Additions.h */,
+				F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
 		FBD5B7471C1C9EB500248753 /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +743,7 @@
 				2645F5931CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.m in Sources */,
 				F43C3E111B577BC9008DCA99 /* TACTransform.m in Sources */,
 				267635621CAE3AC100F7A019 /* NSHTTPURLResponse+Additions.m in Sources */,
+				F52CDAC01DEEA0A20010AC36 /* NSString+Additions.m in Sources */,
 				F43C3E0F1B577BC9008DCA99 /* TACCompare.m in Sources */,
 				F43C3E231B577BC9008DCA99 /* UIView+Common.m in Sources */,
 				DC5EA45C1C0864750098BE60 /* TACRuntimeUtilities.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import <objc/runtime.h>
 #import "NSObject+Common.h"
-#import "NSObject+Debug.h"
+#import "NSNull+isNull.h"
 #import "TACRuntimeUtilities.h"
 
 @implementation NSObject (Common)
@@ -33,7 +33,7 @@
     }
     free(properties);
     
-    return [m_propertyNames copy];;
+    return [m_propertyNames copy];
 }
 
 /** クラスで宣言されているプロパティー名と型を連想配列で取得する */
@@ -44,12 +44,14 @@
     
     for (i = 0; i < outCount; i++) {
         objc_property_t property = properties[i];
+        const char *c_propertyType = property_getType(property);
         const char *c_propertyName = property_getName(property);
-        if (c_propertyName) {
-            const char *c_propertyType = property_getType(property);
-            NSString *propertyType = [NSString stringWithCString:c_propertyType  encoding:NSUTF8StringEncoding];
+        if (c_propertyType && c_propertyName) {
+            NSString *propertyType = [NSString stringWithCString:c_propertyType encoding:NSUTF8StringEncoding];
             NSString *propertyName = [NSString stringWithCString:c_propertyName encoding:NSUTF8StringEncoding];
-            [m_properties setObject:propertyType forKey:propertyName];
+            if (propertyType != nil && ![NSNull isNull:propertyName]) {
+                [m_properties setObject:propertyType forKey:propertyName];
+            }
         }
     }
     free(properties);

@@ -27,7 +27,7 @@
         objc_property_t property = properties[i];
         const char *c_propertyName = property_getName(property);
         if (c_propertyName) {
-            NSString *propertyName = [NSString stringWithCString:c_propertyName encoding:NSUTF8StringEncoding];
+            NSString *propertyName = @(c_propertyName);
             [m_propertyNames addObject:propertyName];
         }
     }
@@ -47,10 +47,10 @@
         const char *c_propertyType = property_getType(property);
         const char *c_propertyName = property_getName(property);
         if (c_propertyType && c_propertyName) {
-            NSString *propertyType = [NSString stringWithCString:c_propertyType encoding:NSUTF8StringEncoding];
-            NSString *propertyName = [NSString stringWithCString:c_propertyName encoding:NSUTF8StringEncoding];
+            NSString *propertyType = @(c_propertyType);
+            NSString *propertyName = @(c_propertyName);
             if (propertyType != nil && ![NSNull isNull:propertyName]) {
-                [m_properties setObject:propertyType forKey:propertyName];
+                m_properties[propertyName] = propertyType;
             }
         }
     }

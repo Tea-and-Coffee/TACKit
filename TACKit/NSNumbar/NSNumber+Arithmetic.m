@@ -40,7 +40,7 @@ ArithmeticOperator divide = ^const NSDecimal(NSDecimal op1, NSDecimal op2) {
     
     @autoreleasepool {
         NSDecimal roundNum;
-        const NSDecimal ans = opr([self decimalValue], [rightOp decimalValue]);
+        const NSDecimal ans = opr(self.decimalValue, rightOp.decimalValue);
         NSDecimalRound(&roundNum, &ans, 2, NSRoundPlain);
         return [NSDecimalNumber decimalNumberWithDecimal:roundNum];
     }

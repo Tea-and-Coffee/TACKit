@@ -99,11 +99,11 @@ static CGFloat const kHeight_IPad_12_9  = 1366.0;
 
 + (TACUserInterfaceIdentifier)identifier {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        if ([[UIScreen mainScreen] nativeScale] == 1.0) {
+        if ([UIScreen mainScreen].nativeScale == 1.0) {
             if ([TACScreenUtilities boundsSize].height == kHeight_3_5) {
                 return TACUserInterfaceIdentifierIPhone3;
             }
-        } else if ([[UIScreen mainScreen] nativeScale] == 2.0) {
+        } else if ([UIScreen mainScreen].nativeScale == 2.0) {
             if ([TACScreenUtilities boundsSize].height == kHeight_3_5) {
                 return TACUserInterfaceIdentifierIPhone4;
             } else if ([TACScreenUtilities boundsSize].height == kHeight_4_0) {
@@ -111,17 +111,17 @@ static CGFloat const kHeight_IPad_12_9  = 1366.0;
             } else if ([TACScreenUtilities boundsSize].height == kHeight_4_7) {
                 return TACUserInterfaceIdentifierIPhone6;
             }
-        } else if ([[UIScreen mainScreen] nativeScale] == 3.0) {
+        } else if ([UIScreen mainScreen].nativeScale == 3.0) {
             if ([TACScreenUtilities boundsSize].height == kHeight_5_5) {
                 return TACUserInterfaceIdentifierIPhone6_Plus;
             }
         }
     } else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        if ([[UIScreen mainScreen] nativeScale] == 1.0) {
+        if ([UIScreen mainScreen].nativeScale == 1.0) {
             if ([TACScreenUtilities boundsSize].height == kHeight_IPad) {
                 return TACUserInterfaceIdentifierIPad;
             }
-        } else if ([[UIScreen mainScreen] nativeScale] == 2.0) {
+        } else if ([UIScreen mainScreen].nativeScale == 2.0) {
             if ([TACScreenUtilities boundsSize].height == kHeight_IPad) {
                 return TACUserInterfaceIdentifierIPad_Retina;
             } else if ([TACScreenUtilities boundsSize].height == kHeight_IPad_12_9) {

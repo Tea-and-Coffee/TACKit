@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSHTTPCookieStorage (Additions)
 
-- (BOOL)hasCookies;
+@property (nonatomic, assign, readonly) BOOL hasCookies;
 - (void)deleteCookies;
 - (void)deleteCookies:(NSArray<NSHTTPCookie *> *)cookies;
 - (void)deleteCookiesForURL:(NSURL *)URL;

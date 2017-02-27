@@ -12,7 +12,7 @@
 
 + (NSString *)identifier;
 
-- (NSArray<NSString *> *)propertyNames;
-- (NSDictionary<NSString *, NSString *> *)properties;
+@property (nonatomic, copy, readonly) NSArray<NSString *> *propertyNames;
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,NSString *> *properties;
 
 @end

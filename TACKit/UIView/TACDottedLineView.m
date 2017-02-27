@@ -36,7 +36,7 @@
 
 - (void)drawRect:(CGRect)rect {
     CGFloat dotSize = MIN(rect.size.width, rect.size.height);
-    CGFloat scale = _extraFine ? 1.0 : [[UIScreen mainScreen] scale];
+    CGFloat scale = _extraFine ? 1.0 : [UIScreen mainScreen].scale;
     
     [_lineColor set];
     

@@ -23,11 +23,11 @@ const char *property_getType(objc_property_t property) {
     char *state = buffer, *attribute;
     while ((attribute = strsep(&state, ",")) != NULL) {
         if (attribute[0] == 'T' && attribute[1] != '@') {
-            return (const char *)[[NSData dataWithBytes:(attribute + 1) length:strlen(attribute) - 1] bytes];
+            return (const char *)[NSData dataWithBytes:(attribute + 1) length:strlen(attribute) - 1].bytes;
         } else if (attribute[0] == 'T' && attribute[1] == '@' && strlen(attribute) == 2) {
             return "id";
         } else if (attribute[0] == 'T' && attribute[1] == '@') {
-            return (const char *)[[NSData dataWithBytes:(attribute + 3) length:strlen(attribute) - 4] bytes];
+            return (const char *)[NSData dataWithBytes:(attribute + 3) length:strlen(attribute) - 4].bytes;
         }
     }
     return "";

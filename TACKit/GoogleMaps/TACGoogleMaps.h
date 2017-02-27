@@ -15,7 +15,7 @@
 @property (nonatomic, strong) CLLocation *location;
 @property (nonatomic, strong) NSString *placeName;
 
-- (BOOL)canOpen;
+@property (nonatomic, assign, readonly) BOOL canOpen;
 - (void)open;
 
 @end

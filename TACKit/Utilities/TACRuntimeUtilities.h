@@ -13,7 +13,7 @@
 
 + (void)swizzleImplementations:(Class)class1 selector:(SEL)target1 class:(Class)class2 selector:(SEL)target2;
 
-OBJC_EXPORT const char *property_getType(objc_property_t property);
+FOUNDATION_EXPORT const char *property_getType(objc_property_t property);
 
 @end
 

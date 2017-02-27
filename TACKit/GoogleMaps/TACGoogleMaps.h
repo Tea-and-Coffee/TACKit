@@ -7,7 +7,6 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface TACGoogleMaps : NSObject

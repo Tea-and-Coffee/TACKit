@@ -6,7 +6,6 @@
 //  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 // Margin
@@ -18,35 +17,35 @@ static CGFloat const EIGHTH_MARGIN  = MARGIN / 8;
 
 
 // UIStatusBar
-OBJC_EXPORT CGFloat statusBarHeight();
-OBJC_EXPORT CGFloat statusBarPortraitHeight();
-OBJC_EXPORT CGFloat statusBarLandscapeHeight();
+UIKIT_EXTERN CGFloat statusBarHeight();
+UIKIT_EXTERN CGFloat statusBarPortraitHeight();
+UIKIT_EXTERN CGFloat statusBarLandscapeHeight();
 
 // UIStatusBar (InCall)
-OBJC_EXPORT CGFloat statusBarInCallHeight();
-OBJC_EXPORT CGFloat statusBarInCallPortraitHeight();
-OBJC_EXPORT CGFloat statusBarInCallLandscapeHeight();
+UIKIT_EXTERN CGFloat statusBarInCallHeight();
+UIKIT_EXTERN CGFloat statusBarInCallPortraitHeight();
+UIKIT_EXTERN CGFloat statusBarInCallLandscapeHeight();
 
 // UINavigationBar
-OBJC_EXPORT CGFloat navigationBarHeight();
-OBJC_EXPORT CGFloat navigationBarPortraitHeight();
-OBJC_EXPORT CGFloat navigationBarLandscapeHeight();
+UIKIT_EXTERN CGFloat navigationBarHeight();
+UIKIT_EXTERN CGFloat navigationBarPortraitHeight();
+UIKIT_EXTERN CGFloat navigationBarLandscapeHeight();
 
 // UINavigationBar (Prompt)
-OBJC_EXPORT CGFloat navigationBarPromptHeight();
-OBJC_EXPORT CGFloat navigationBarPromptPortraitHeight();
-OBJC_EXPORT CGFloat navigationBarPromptLandscapeHeight();
+UIKIT_EXTERN CGFloat navigationBarPromptHeight();
+UIKIT_EXTERN CGFloat navigationBarPromptPortraitHeight();
+UIKIT_EXTERN CGFloat navigationBarPromptLandscapeHeight();
 
 // UIToolbar
-OBJC_EXPORT CGFloat toolbarHeight();
-OBJC_EXPORT CGFloat toolbarPortraitHeight();
-OBJC_EXPORT CGFloat toolbarLandscapeHeight();
+UIKIT_EXTERN CGFloat toolbarHeight();
+UIKIT_EXTERN CGFloat toolbarPortraitHeight();
+UIKIT_EXTERN CGFloat toolbarLandscapeHeight();
 
 // UIToolbar (Custom)
-OBJC_EXPORT CGFloat customToolbarHeight();
+UIKIT_EXTERN CGFloat customToolbarHeight();
 
 // UITabBar
-OBJC_EXPORT CGFloat tabBarHeight();
+UIKIT_EXTERN CGFloat tabBarHeight();
 
 
 // UITableViewCell

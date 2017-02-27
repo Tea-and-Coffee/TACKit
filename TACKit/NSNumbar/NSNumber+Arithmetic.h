@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef const NSDecimal (^ArithmeticOperator)(NSDecimal, NSDecimal);
-OBJC_EXPORT ArithmeticOperator add, subtract, multiply, divide;
+FOUNDATION_EXPORT ArithmeticOperator add, subtract, multiply, divide;
 
 @interface NSNumber (Arithmetic)
 

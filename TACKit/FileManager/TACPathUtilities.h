@@ -21,11 +21,11 @@ typedef NS_ENUM(NSUInteger, TACSearchPathDirectory) {
 
 @interface TACPathUtilities : NSObject
 
-OBJC_EXPORT NSString *TACSearchPathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
-OBJC_EXPORT NSString *TACCreatePathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
-OBJC_EXPORT NSString *TACCreatePathForTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
-OBJC_EXPORT BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
-OBJC_EXPORT BOOL TACRemoveTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+FOUNDATION_EXPORT NSString *TACSearchPathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+FOUNDATION_EXPORT NSString *TACCreatePathForDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+FOUNDATION_EXPORT NSString *TACCreatePathForTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+FOUNDATION_EXPORT BOOL TACRemoveDirectoryInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
+FOUNDATION_EXPORT BOOL TACRemoveTACDirectoryInDomains(TACSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
 
 BOOL createDirectoryAtPath(NSString *path);
 BOOL removeItemAtPath(NSString *path);

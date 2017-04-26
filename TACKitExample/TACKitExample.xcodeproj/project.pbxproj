@@ -35,8 +35,6 @@
 		F43C3E0F1B577BC9008DCA99 /* TACCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DC91B577BC9008DCA99 /* TACCompare.m */; };
 		F43C3E111B577BC9008DCA99 /* TACTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DCD1B577BC9008DCA99 /* TACTransform.m */; };
 		F43C3E131B577BC9008DCA99 /* TACDebugMode.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DD41B577BC9008DCA99 /* TACDebugMode.m */; };
-		F43C3E141B577BC9008DCA99 /* UIAlertView+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DDC1B577BC9008DCA99 /* UIAlertView+Error.m */; };
-		F43C3E151B577BC9008DCA99 /* UIAlertView+HTTPStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DDE1B577BC9008DCA99 /* UIAlertView+HTTPStatus.m */; };
 		F43C3E161B577BC9008DCA99 /* UIImage+CommonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DE11B577BC9008DCA99 /* UIImage+CommonImage.m */; };
 		F43C3E171B577BC9008DCA99 /* UIImage+Trimming.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DE31B577BC9008DCA99 /* UIImage+Trimming.m */; };
 		F43C3E181B577BC9008DCA99 /* TACNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C3DE61B577BC9008DCA99 /* TACNavigationController.m */; };
@@ -138,10 +136,6 @@
 		F43C3DD61B577BC9008DCA99 /* TACIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACIdentifier.h; sourceTree = "<group>"; };
 		F43C3DD71B577BC9008DCA99 /* TACKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACKit.h; sourceTree = "<group>"; };
 		F43C3DD91B577BC9008DCA99 /* TACSystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACSystemVersion.h; sourceTree = "<group>"; };
-		F43C3DDB1B577BC9008DCA99 /* UIAlertView+Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Error.h"; sourceTree = "<group>"; };
-		F43C3DDC1B577BC9008DCA99 /* UIAlertView+Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Error.m"; sourceTree = "<group>"; };
-		F43C3DDD1B577BC9008DCA99 /* UIAlertView+HTTPStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+HTTPStatus.h"; sourceTree = "<group>"; };
-		F43C3DDE1B577BC9008DCA99 /* UIAlertView+HTTPStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+HTTPStatus.m"; sourceTree = "<group>"; };
 		F43C3DE01B577BC9008DCA99 /* UIImage+CommonImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CommonImage.h"; sourceTree = "<group>"; };
 		F43C3DE11B577BC9008DCA99 /* UIImage+CommonImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonImage.m"; sourceTree = "<group>"; };
 		F43C3DE21B577BC9008DCA99 /* UIImage+Trimming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Trimming.h"; sourceTree = "<group>"; };
@@ -450,10 +444,6 @@
 		F43C3DDA1B577BC9008DCA99 /* UIAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				F43C3DDB1B577BC9008DCA99 /* UIAlertView+Error.h */,
-				F43C3DDC1B577BC9008DCA99 /* UIAlertView+Error.m */,
-				F43C3DDD1B577BC9008DCA99 /* UIAlertView+HTTPStatus.h */,
-				F43C3DDE1B577BC9008DCA99 /* UIAlertView+HTTPStatus.m */,
 			);
 			path = UIAlertView;
 			sourceTree = "<group>";
@@ -772,8 +762,6 @@
 				F43C3E1E1B577BC9008DCA99 /* TACTableViewCellStyleValue1.m in Sources */,
 				F54E1DB71EB09FF100E06F06 /* UIAlertController+Additions.m in Sources */,
 				260C75041C58B7C6007BB06A /* TACLineView.m in Sources */,
-				F43C3E151B577BC9008DCA99 /* UIAlertView+HTTPStatus.m in Sources */,
-				F43C3E141B577BC9008DCA99 /* UIAlertView+Error.m in Sources */,
 				260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */,
 				2607C3291CAA31F10094ACF6 /* NSDate+Additions.m in Sources */,
 				F43C3E0E1B577BC9008DCA99 /* NSObject+Common.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "TACGoogleMaps.h"
+#import "UIApplication+Additions.h"
 
 @implementation TACGoogleMaps
 
@@ -29,7 +30,7 @@
 
 /** Google Maps.appを開く */
 - (void)open {
-    [[UIApplication sharedApplication] openURL:self.url];
+    [[UIApplication sharedApplication] tac_openURL:self.url];
 }
 
 @end

@@ -32,6 +32,7 @@
 #import "NSURL+Debug.h"
 #import "NSURLCredentialStorage+Authentication.h"
 #import "UIAlertController+Additions.h"
+#import "UIApplication+Additions.h"
 #import "TACCrystalButton.h"
 #import "TACDevice.h"
 #import "UIImage+CommonImage.h"

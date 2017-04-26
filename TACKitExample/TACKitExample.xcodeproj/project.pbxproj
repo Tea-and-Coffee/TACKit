@@ -60,6 +60,7 @@
 		F49EC18B1B578EC800820ED2 /* TACPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */; };
 		F52CDAC01DEEA0A20010AC36 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */; };
 		F54E1DB71EB09FF100E06F06 /* UIAlertController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E1DB61EB09FF100E06F06 /* UIAlertController+Additions.m */; };
+		F54E1DBB1EB0A31F00E06F06 /* UIApplication+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E1DBA1EB0A31F00E06F06 /* UIApplication+Additions.m */; };
 		F5BB5C221EB08EB200511CDD /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */; };
 		FBD5B7461C1C9EA200248753 /* TACSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7451C1C9EA200248753 /* TACSize.m */; };
 		FBD5B74A1C1C9EB500248753 /* TACDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7491C1C9EB500248753 /* TACDevice.m */; };
@@ -186,6 +187,8 @@
 		F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		F54E1DB51EB09FF100E06F06 /* UIAlertController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Additions.h"; sourceTree = "<group>"; };
 		F54E1DB61EB09FF100E06F06 /* UIAlertController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Additions.m"; sourceTree = "<group>"; };
+		F54E1DB91EB0A31F00E06F06 /* UIApplication+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Additions.h"; sourceTree = "<group>"; };
+		F54E1DBA1EB0A31F00E06F06 /* UIApplication+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Additions.m"; sourceTree = "<group>"; };
 		F5BB5C201EB08EB200511CDD /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Additions.h"; sourceTree = "<group>"; };
 		F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
 		FBD5B7441C1C9EA200248753 /* TACSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACSize.h; sourceTree = "<group>"; };
@@ -362,7 +365,7 @@
 				F43C3DCE1B577BC9008DCA99 /* NSURL */,
 				264BA7491C62DCD600CABDE4 /* NSURLCredentialStorage */,
 				F54E1DB41EB09FD200E06F06 /* UIAlertController */,
-				F43C3DDA1B577BC9008DCA99 /* UIAlertView */,
+				F54E1DB81EB0A30400E06F06 /* UIApplication */,
 				260C74FB1C58ADE0007BB06A /* UIButton */,
 				FBD5B7471C1C9EB500248753 /* UIDevice */,
 				F43C3DDF1B577BC9008DCA99 /* UIImage */,
@@ -439,13 +442,6 @@
 				26F321511CA91A670053D4FE /* NSURL+Debug.m */,
 			);
 			path = NSURL;
-			sourceTree = "<group>";
-		};
-		F43C3DDA1B577BC9008DCA99 /* UIAlertView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIAlertView;
 			sourceTree = "<group>";
 		};
 		F43C3DDF1B577BC9008DCA99 /* UIImage */ = {
@@ -638,6 +634,15 @@
 			path = UIAlertController;
 			sourceTree = "<group>";
 		};
+		F54E1DB81EB0A30400E06F06 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				F54E1DB91EB0A31F00E06F06 /* UIApplication+Additions.h */,
+				F54E1DBA1EB0A31F00E06F06 /* UIApplication+Additions.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 		FBD5B7471C1C9EB500248753 /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,6 +755,7 @@
 			files = (
 				2645F5931CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.m in Sources */,
 				F43C3E111B577BC9008DCA99 /* TACTransform.m in Sources */,
+				F54E1DBB1EB0A31F00E06F06 /* UIApplication+Additions.m in Sources */,
 				267635621CAE3AC100F7A019 /* NSHTTPURLResponse+Additions.m in Sources */,
 				F52CDAC01DEEA0A20010AC36 /* NSString+Additions.m in Sources */,
 				F43C3E0F1B577BC9008DCA99 /* TACCompare.m in Sources */,

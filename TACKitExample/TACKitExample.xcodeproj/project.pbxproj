@@ -61,6 +61,7 @@
 		F49EC17F1B5779B300820ED2 /* TACKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */; };
 		F49EC18B1B578EC800820ED2 /* TACPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */; };
 		F52CDAC01DEEA0A20010AC36 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */; };
+		F5BB5C221EB08EB200511CDD /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */; };
 		FBD5B7461C1C9EA200248753 /* TACSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7451C1C9EA200248753 /* TACSize.m */; };
 		FBD5B74A1C1C9EB500248753 /* TACDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7491C1C9EB500248753 /* TACDevice.m */; };
 /* End PBXBuildFile section */
@@ -188,6 +189,8 @@
 		F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACPlaceHolderTextView.m; sourceTree = "<group>"; };
 		F52CDABE1DEEA0A20010AC36 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		F5BB5C201EB08EB200511CDD /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Additions.h"; sourceTree = "<group>"; };
+		F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
 		FBD5B7441C1C9EA200248753 /* TACSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACSize.h; sourceTree = "<group>"; };
 		FBD5B7451C1C9EA200248753 /* TACSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACSize.m; sourceTree = "<group>"; };
 		FBD5B7481C1C9EB500248753 /* TACDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACDevice.h; sourceTree = "<group>"; };
@@ -469,6 +472,8 @@
 			children = (
 				F43C3DE51B577BC9008DCA99 /* TACNavigationController.h */,
 				F43C3DE61B577BC9008DCA99 /* TACNavigationController.m */,
+				F5BB5C201EB08EB200511CDD /* UINavigationController+Additions.h */,
+				F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -777,6 +782,7 @@
 				260C74FE1C58AE01007BB06A /* TACCrystalButton.m in Sources */,
 				F43C3E1F1B577BC9008DCA99 /* TACTableViewCellStyleValue2.m in Sources */,
 				260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */,
+				F5BB5C221EB08EB200511CDD /* UINavigationController+Additions.m in Sources */,
 				DC5EA44F1C083E1A0098BE60 /* UIStoryboard+ViewController.m in Sources */,
 				264BA7521C62FBB400CABDE4 /* NSURLCredentialStorage+Authentication.m in Sources */,
 				F43C3E0C1B577BC9008DCA99 /* TACAppleMaps.m in Sources */,

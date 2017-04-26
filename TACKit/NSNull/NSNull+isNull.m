@@ -14,4 +14,8 @@
     return obj == nil || [[NSNull null] isEqual:obj];
 }
 
++ (BOOL)notNull:(id)obj {
+    return ![self isNull:obj];
+}
+
 @end

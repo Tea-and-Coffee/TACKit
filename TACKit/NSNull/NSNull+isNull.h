@@ -11,5 +11,6 @@
 @interface NSNull (isNull)
 
 + (BOOL)isNull:(id)obj;
++ (BOOL)notNull:(id)obj;
 
 @end

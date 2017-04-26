@@ -15,7 +15,7 @@
 #pragma clang diagnostic pop;
 
 - (void)debugMode {
-    if ([TACDebugMode showBackGroundColor]) {
+    if ([TACDebugMode showingBackgroundColor]) {
         NSInteger r = (NSInteger)arc4random_uniform(255);
         NSInteger g = (NSInteger)arc4random_uniform(255);
         NSInteger b = (NSInteger)arc4random_uniform(255);

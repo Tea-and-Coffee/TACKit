@@ -10,6 +10,6 @@
 
 @interface TACDebugMode : NSObject
 
-+ (BOOL)showBackGroundColor;
++ (BOOL)showingBackgroundColor;
 
 @end

@@ -9,15 +9,15 @@
 #import "TACDebugMode.h"
 
 #ifdef DEBUG
-static BOOL const showBackGroundColor = NO;
+static BOOL const showingBackgroundColor = NO;
 #else
-static BOOL const showBackGroundColor = NO;
+static BOOL const showingBackgroundColor = NO;
 #endif
 
 @implementation TACDebugMode
 
-+ (BOOL)showBackGroundColor {
-    return showBackGroundColor;
++ (BOOL)showingBackgroundColor {
+    return showingBackgroundColor;
 }
 
 @end

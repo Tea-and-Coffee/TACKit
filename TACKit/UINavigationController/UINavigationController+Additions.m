@@ -3,7 +3,7 @@
 //  TACKit
 //
 //  Created by masato_arai on 2017/04/26.
-//  Copyright (c) 2017年 masato_arai. All rights reserved.
+//  Copyright (c) 2017年 Tea and Coffee. All rights reserved.
 //
 
 #import "UINavigationController+Additions.h"

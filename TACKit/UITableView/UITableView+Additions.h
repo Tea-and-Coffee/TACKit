@@ -12,7 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableView (Additions)
 
+@property (nonatomic, strong, readonly, nullable) NSIndexPath *indexPathForTopRow;
+@property (nonatomic, strong, readonly, nullable) NSIndexPath *indexPathForBottomRow;
+
 - (nullable __kindof UITableViewCell *)cellForRowAtSubview:(UIView *)subview;
+
+- (void)deselectRowsWithAnimated:(BOOL)animated;
 
 @end
 

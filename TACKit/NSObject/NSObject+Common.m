@@ -8,7 +8,7 @@
 
 #import <objc/runtime.h>
 #import "NSObject+Common.h"
-#import "NSNull+isNull.h"
+#import "NSNull+Additions.h"
 #import "TACRuntimeUtilities.h"
 
 @implementation NSObject (Common)
@@ -49,7 +49,7 @@
         if (c_propertyType && c_propertyName) {
             NSString *propertyType = @(c_propertyType);
             NSString *propertyName = @(c_propertyName);
-            if (propertyType != nil && ![NSNull isNull:propertyName]) {
+            if (propertyType != nil && [NSNull notNull:propertyName]) {
                 m_properties[propertyName] = propertyType;
             }
         }

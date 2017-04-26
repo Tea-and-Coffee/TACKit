@@ -10,7 +10,7 @@
 		2607C3291CAA31F10094ACF6 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2607C3281CAA31F10094ACF6 /* NSDate+Additions.m */; };
 		2607C32C1CAA4E840094ACF6 /* UITableView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2607C32B1CAA4E840094ACF6 /* UITableView+Additions.m */; };
 		260C74F01C589C96007BB06A /* NSNumber+Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */; };
-		260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F31C589D05007BB06A /* NSNull+isNull.m */; };
+		260C74F41C589D05007BB06A /* NSNull+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F31C589D05007BB06A /* NSNull+Additions.m */; };
 		260C74FA1C58A2A6007BB06A /* TACBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74F91C58A2A6007BB06A /* TACBorderView.m */; };
 		260C74FE1C58AE01007BB06A /* TACCrystalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C74FD1C58AE01007BB06A /* TACCrystalButton.m */; };
 		260C75011C58B71E007BB06A /* TACDottedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C75001C58B71E007BB06A /* TACDottedLineView.m */; };
@@ -83,8 +83,8 @@
 		2607C32B1CAA4E840094ACF6 /* UITableView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Additions.m"; sourceTree = "<group>"; };
 		260C74EE1C589C96007BB06A /* NSNumber+Arithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Arithmetic.h"; sourceTree = "<group>"; };
 		260C74EF1C589C96007BB06A /* NSNumber+Arithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Arithmetic.m"; sourceTree = "<group>"; };
-		260C74F21C589D05007BB06A /* NSNull+isNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+isNull.h"; sourceTree = "<group>"; };
-		260C74F31C589D05007BB06A /* NSNull+isNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+isNull.m"; sourceTree = "<group>"; };
+		260C74F21C589D05007BB06A /* NSNull+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Additions.h"; sourceTree = "<group>"; };
+		260C74F31C589D05007BB06A /* NSNull+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Additions.m"; sourceTree = "<group>"; };
 		260C74F81C58A2A6007BB06A /* TACBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACBorderView.h; sourceTree = "<group>"; };
 		260C74F91C58A2A6007BB06A /* TACBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACBorderView.m; sourceTree = "<group>"; };
 		260C74FC1C58AE01007BB06A /* TACCrystalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACCrystalButton.h; sourceTree = "<group>"; };
@@ -236,8 +236,8 @@
 		260C74F11C589CE7007BB06A /* NSNull */ = {
 			isa = PBXGroup;
 			children = (
-				260C74F21C589D05007BB06A /* NSNull+isNull.h */,
-				260C74F31C589D05007BB06A /* NSNull+isNull.m */,
+				260C74F21C589D05007BB06A /* NSNull+Additions.h */,
+				260C74F31C589D05007BB06A /* NSNull+Additions.m */,
 			);
 			path = NSNull;
 			sourceTree = "<group>";
@@ -773,7 +773,7 @@
 				F43C3E161B577BC9008DCA99 /* UIImage+CommonImage.m in Sources */,
 				F43C3E1A1B577BC9008DCA99 /* TACScreenUtilities.m in Sources */,
 				26F321521CA91A670053D4FE /* NSURL+Debug.m in Sources */,
-				260C74F41C589D05007BB06A /* NSNull+isNull.m in Sources */,
+				260C74F41C589D05007BB06A /* NSNull+Additions.m in Sources */,
 				F43C3E131B577BC9008DCA99 /* TACDebugMode.m in Sources */,
 				F49EC18B1B578EC800820ED2 /* TACPlaceHolderTextView.m in Sources */,
 				F49EC1681B5779B300820ED2 /* AppDelegate.m in Sources */,

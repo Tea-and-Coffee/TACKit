@@ -7,7 +7,7 @@
 //
 
 #import "TACCompare.h"
-#import "NSNull+isNull.h"
+#import "NSNull+Additions.h"
 
 @implementation TACCompare
 

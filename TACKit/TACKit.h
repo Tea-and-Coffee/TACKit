@@ -23,7 +23,7 @@
 #import "NSDate+Additions.h"
 #import "NSHTTPCookieStorage+Additions.h"
 #import "NSHTTPURLResponse+Additions.h"
-#import "NSNull+isNull.h"
+#import "NSNull+Additions.h"
 #import "NSNumber+Arithmetic.h"
 #import "NSObject+Common.h"
 #import "NSObject+Debug.h"

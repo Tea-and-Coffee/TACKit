@@ -1,5 +1,5 @@
 //
-//  NSNull+isNull.h
+//  NSNull+Additions.h
 //  TACKit
 //
 //  Created by masato_arai on 2015/12/04.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSNull (isNull)
+@interface NSNull (Additions)
 
 + (BOOL)isNull:(id)obj;
 + (BOOL)notNull:(id)obj;

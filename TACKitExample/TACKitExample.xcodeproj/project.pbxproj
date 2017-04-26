@@ -61,6 +61,7 @@
 		F49EC17F1B5779B300820ED2 /* TACKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC17E1B5779B300820ED2 /* TACKitExampleTests.m */; };
 		F49EC18B1B578EC800820ED2 /* TACPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */; };
 		F52CDAC01DEEA0A20010AC36 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */; };
+		F54E1DB71EB09FF100E06F06 /* UIAlertController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E1DB61EB09FF100E06F06 /* UIAlertController+Additions.m */; };
 		F5BB5C221EB08EB200511CDD /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */; };
 		FBD5B7461C1C9EA200248753 /* TACSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7451C1C9EA200248753 /* TACSize.m */; };
 		FBD5B74A1C1C9EB500248753 /* TACDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7491C1C9EB500248753 /* TACDevice.m */; };
@@ -189,6 +190,8 @@
 		F49EC18A1B578EC800820ED2 /* TACPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACPlaceHolderTextView.m; sourceTree = "<group>"; };
 		F52CDABE1DEEA0A20010AC36 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		F54E1DB51EB09FF100E06F06 /* UIAlertController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Additions.h"; sourceTree = "<group>"; };
+		F54E1DB61EB09FF100E06F06 /* UIAlertController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Additions.m"; sourceTree = "<group>"; };
 		F5BB5C201EB08EB200511CDD /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Additions.h"; sourceTree = "<group>"; };
 		F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
 		FBD5B7441C1C9EA200248753 /* TACSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACSize.h; sourceTree = "<group>"; };
@@ -364,6 +367,7 @@
 				F52CDABD1DEEA0830010AC36 /* NSString */,
 				F43C3DCE1B577BC9008DCA99 /* NSURL */,
 				264BA7491C62DCD600CABDE4 /* NSURLCredentialStorage */,
+				F54E1DB41EB09FD200E06F06 /* UIAlertController */,
 				F43C3DDA1B577BC9008DCA99 /* UIAlertView */,
 				260C74FB1C58ADE0007BB06A /* UIButton */,
 				FBD5B7471C1C9EB500248753 /* UIDevice */,
@@ -635,6 +639,15 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
+		F54E1DB41EB09FD200E06F06 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				F54E1DB51EB09FF100E06F06 /* UIAlertController+Additions.h */,
+				F54E1DB61EB09FF100E06F06 /* UIAlertController+Additions.m */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
 		FBD5B7471C1C9EB500248753 /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +770,7 @@
 				F43C3E261B577BC9008DCA99 /* TACViewController.m in Sources */,
 				264BA7B71C6323E200CABDE4 /* ExampleModel.m in Sources */,
 				F43C3E1E1B577BC9008DCA99 /* TACTableViewCellStyleValue1.m in Sources */,
+				F54E1DB71EB09FF100E06F06 /* UIAlertController+Additions.m in Sources */,
 				260C75041C58B7C6007BB06A /* TACLineView.m in Sources */,
 				F43C3E151B577BC9008DCA99 /* UIAlertView+HTTPStatus.m in Sources */,
 				F43C3E141B577BC9008DCA99 /* UIAlertView+Error.m in Sources */,

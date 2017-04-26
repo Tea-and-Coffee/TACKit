@@ -61,6 +61,7 @@
 		F52CDAC01DEEA0A20010AC36 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CDABF1DEEA0A20010AC36 /* NSString+Additions.m */; };
 		F54E1DB71EB09FF100E06F06 /* UIAlertController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E1DB61EB09FF100E06F06 /* UIAlertController+Additions.m */; };
 		F54E1DBB1EB0A31F00E06F06 /* UIApplication+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E1DBA1EB0A31F00E06F06 /* UIApplication+Additions.m */; };
+		F54E1DBE1EB0A7A400E06F06 /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E1DBD1EB0A7A400E06F06 /* UIImage+Orientation.m */; };
 		F5BB5C221EB08EB200511CDD /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */; };
 		FBD5B7461C1C9EA200248753 /* TACSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7451C1C9EA200248753 /* TACSize.m */; };
 		FBD5B74A1C1C9EB500248753 /* TACDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B7491C1C9EB500248753 /* TACDevice.m */; };
@@ -189,6 +190,8 @@
 		F54E1DB61EB09FF100E06F06 /* UIAlertController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Additions.m"; sourceTree = "<group>"; };
 		F54E1DB91EB0A31F00E06F06 /* UIApplication+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Additions.h"; sourceTree = "<group>"; };
 		F54E1DBA1EB0A31F00E06F06 /* UIApplication+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Additions.m"; sourceTree = "<group>"; };
+		F54E1DBC1EB0A7A400E06F06 /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
+		F54E1DBD1EB0A7A400E06F06 /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
 		F5BB5C201EB08EB200511CDD /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Additions.h"; sourceTree = "<group>"; };
 		F5BB5C211EB08EB200511CDD /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Additions.m"; sourceTree = "<group>"; };
 		FBD5B7441C1C9EA200248753 /* TACSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACSize.h; sourceTree = "<group>"; };
@@ -449,6 +452,8 @@
 			children = (
 				F43C3DE01B577BC9008DCA99 /* UIImage+CommonImage.h */,
 				F43C3DE11B577BC9008DCA99 /* UIImage+CommonImage.m */,
+				F54E1DBC1EB0A7A400E06F06 /* UIImage+Orientation.h */,
+				F54E1DBD1EB0A7A400E06F06 /* UIImage+Orientation.m */,
 				F43C3DE21B577BC9008DCA99 /* UIImage+Trimming.h */,
 				F43C3DE31B577BC9008DCA99 /* UIImage+Trimming.m */,
 				26F321531CA91D770053D4FE /* UIImage+View.h */,
@@ -753,6 +758,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54E1DBE1EB0A7A400E06F06 /* UIImage+Orientation.m in Sources */,
 				2645F5931CCF4016008ACF60 /* NSHTTPCookieStorage+Additions.m in Sources */,
 				F43C3E111B577BC9008DCA99 /* TACTransform.m in Sources */,
 				F54E1DBB1EB0A31F00E06F06 /* UIApplication+Additions.m in Sources */,

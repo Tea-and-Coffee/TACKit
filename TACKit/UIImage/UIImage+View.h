@@ -11,7 +11,6 @@
 @interface UIImage (View)
 
 + (UIImage *)imageWithView:(UIView *)view;
-
 - (instancetype)initWithView:(UIView *)view;
 
 @end

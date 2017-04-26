@@ -36,6 +36,7 @@
 #import "TACCrystalButton.h"
 #import "TACDevice.h"
 #import "UIImage+CommonImage.h"
+#import "UIImage+Orientation.h"
 #import "UIImage+Trimming.h"
 #import "UIImage+View.h"
 #import "TACNavigationController.h"
